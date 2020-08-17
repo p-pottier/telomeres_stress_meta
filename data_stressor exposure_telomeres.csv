@@ -1,0 +1,348 @@
+﻿No;DOI;Population;Species;Taxonomic class;Effect size;Sample size;Effect size correction;Age;Accounting for age;Sex;Publication year;Cell;Cell turnover;Stressor;Stressor category;Type of study;Telomere measure;Method for telomere measurement
+1;10.1111/jeb.12615;wild;Parus major;bird;-1.164458961;55;N;adults;no;both;2015;blood;short;no antimalarial drug supplementation;pathogen infection;experimental;telomere shortening;qPCR
+2;10.1098/rspb.2014.1610;wild;Sturnus vulgaris;bird;-0.370664213;48;N;juveniles;yes;both;2015;blood;short;relative low body condition;competition;experimental;telomere length;qPCR
+3;10.1098/rspb.2014.1610;wild;Sturnus vulgaris;bird;-0.217715168;48;N;juveniles;yes;both;2015;blood;short;relative low body condition;competition;experimental;telomere length;qPCR
+4;10.1098/rspb.2014.1610;wild;Sturnus vulgaris;bird;-0.252428365;48;Y;juveniles;yes;both;2015;blood;short;relative low body condition;competition;experimental;telomere shortening;qPCR
+5;10.1371/journal.pone.0083617;wild;Sturnus vulgaris;bird;-0.23292281;25;Y;juveniles;yes;both;2013;blood;short;large brood size;competition;experimental;telomere shortening;qPCR
+6;10.1371/journal.pone.0083617;wild;Sturnus vulgaris;bird;-0.516765808;25;Y;juveniles;yes;both;2013;blood;short;number of heavier siblings ;competition;experimental;telomere length;qPCR
+7;10.1111/j.1365-294X.2011.05331.x;wild;Aptenodytes patagonicus;bird;-0.268039881;58;Y;juveniles;no;both;2012;blood;short;fast growth rate;development;correlative;telomere shortening;qPCR
+8;10.1186/1472-6785-12-17;wild;Ficedula albicollis;bird;-0.010131206;269;N;juveniles;yes;both;2012;blood;short;large brood size;competition;experimental;telomere length;qPCR
+9;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.2371;16;N;adults;no;female;2016;blood;short;high POP exposure;human disturbance;correlative;telomere length;TRF
+10;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.1399;22;N;adults;no;male;2016;blood;short;high POP exposure;human disturbance;correlative;telomere length;TRF
+11;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.2416;16;N;adults;no;female;2016;blood;short;high PCB exposure;human disturbance;correlative;telomere length;TRF
+12;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.0754;22;N;adults;no;male;2016;blood;short;high PCB exposure;human disturbance;correlative;telomere length;TRF
+13;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.1941;16;N;adults;no;female;2016;blood;short;high HCB exposure;human disturbance;correlative;telomere length;TRF
+14;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;0.01;22;N;adults;no;male;2016;blood;short;high HCB exposure;human disturbance;correlative;telomere length;TRF
+15;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;0.0686;16;N;adults;no;female;2016;blood;short;high DDE exposure;human disturbance;correlative;telomere length;TRF
+16;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.2571;22;N;adults;no;male;2016;blood;short;high DDE exposure;human disturbance;correlative;telomere length;TRF
+17;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.584;16;N;adults;no;female;2016;blood;short;high oxychlorane exposure;human disturbance;correlative;telomere length;TRF
+18;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.0353;22;N;adults;no;male;2016;blood;short;high oxychlorane exposure;human disturbance;correlative;telomere length;TRF
+19;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.2941;16;N;adults;no;female;2016;blood;short;high cis-Nonachlor exposure;human disturbance;correlative;telomere length;TRF
+20;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;0.062;22;N;adults;no;male;2016;blood;short;high cis-Nonachlor exposure;human disturbance;correlative;telomere length;TRF
+21;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.3003;16;N;adults;no;female;2016;blood;short;high trans-Nonachlor exposure;human disturbance;correlative;telomere length;TRF
+22;10.1016/j.scitotenv.2016.04.096;wild;Rissa tridactyla;bird;-0.2131;22;N;adults;no;male;2016;blood;short;high trans-Nonachlor exposure;human disturbance;correlative;telomere length;TRF
+23;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;-0.366811931;174;Y;adults;yes;both;2015;blood;short;malaria prevalence;pathogen infection;correlative;telomere shortening;qPCR
+24;10.1126/science.1261121;captivity;Acrocephalus arundinaceus;bird;-0.978839569;16;Y;adults;no;both;2015;blood;short;malaria prevalence;pathogen infection;experimental;telomere shortening;qPCR
+25;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;-0.261609141;172;N;juveniles;no;both;2015;blood;short;malaria prevalence in mothers;low parental quality;correlative;telomere shortening;qPCR
+26;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;-0.480195293;65;N;adults;no;both;2015;blood;short;malaria prevalence;pathogen infection;correlative;telomere shortening;qPCR
+27;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;0.12464147;133;N;juveniles;no;both;2015;blood;short;malaria prevalence in fathers;low parental quality;correlative;telomere shortening;qPCR
+28;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;-0.435611223;23;N;juveniles;no;both;2015;blood;short;malaria infection intensity;pathogen infection;correlative;telomere shortening;qPCR
+29;10.1126/science.1261121;wild;Acrocephalus arundinaceus;bird;-1.156817465;12;N;juveniles;no;both;2015;blood;short;malaria infection intensity;pathogen infection;correlative;telomere shortening;qPCR
+30;10.1242/jeb.109942;captivity;Taeniopygia guttata;bird;-0.201598199;55;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere length;qPCR
+31;10.1242/jeb.109942;captivity;Taeniopygia guttata;bird;-0.731463179;55;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere length;qPCR
+32;10.1242/jeb.109942;captivity;Taeniopygia guttata;bird;-0.339270348;34;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere length;qPCR
+33;10.3389/fevo.2014.00009;captivity;Taeniopygiaguttata;bird;-0.489504844;36;N;adults;yes;both;2015;blood;short;large brood size;reproductive effort;experimental;telomere shortening;qPCR
+34;10.3389/fevo.2014.00009;captivity;Taeniopygiaguttata;bird;-0.530756536;16;N;adults;yes;both;2015;blood;short;large brood size;reproductive effort;experimental;telomere shortening;qPCR
+35;10.1111/jav.00714;wild;Parus ater;bird;-0.489727341;69;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere shortening;qPCR
+36;10.1111/jav.00714;wild;Parus major;bird;-0.286602464;73;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere shortening;qPCR
+37;10.1111/jav.00714;wild;Parus ater;bird;0.466521864;69;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere length;qPCR
+38;10.1111/jav.00714;wild;Parus major;bird;-0.180173468;73;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere length;qPCR
+39;10.1111/jav.00714;wild;Parus major;bird;-0.357037097;73;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere length;qPCR
+40;10.1111/jav.00714;wild;Parus ater;bird;0.230617337;69;N;juveniles;yes;both;2017;blood;short;high elevation;harsh abiotic condition;correlative;telomere length;qPCR
+41;10.1111/mec.13856;wild;Salmo trutta;fish;-0.259577167;112;N;juveniles;no;both;2016;blood+tissues;short;high temperature;harsh abiotic condition;correlative;telomere length;qPCR
+42;10.1098/rsbl.2013.0889;wild;Rissa tridactyla;bird;-0.766175386;25;Y;adults;no;both;2013;blood;short;short time spent at wintering ground;harsh abiotic condition;correlative;telomere shortening;TRF
+43;10.1098/rspb.2013.3287;wild;Corvus monedula;bird;-0.147459588;157;N;juveniles;yes;both;2014;blood;short;large brood size;competition;experimental;telomere length;TRF
+44;10.1098/rspb.2013.3287;wild;Corvus monedula;bird;-0.128570437;157;N;juveniles;yes;both;2014;blood;short;large brood size;competition;experimental;telomere shortening;TRF
+45;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;-0.2023;35;N;juveniles;yes;both;2016;blood;short;high HCB exposure;human disturbance;correlative;telomere length;qPCR
+46;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;-0.2599;35;N;juveniles;yes;both;2016;blood;short;high oxychlorane exposure;human disturbance;correlative;telomere length;qPCR
+47;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;-0.1578;35;N;juveniles;yes;both;2016;blood;short;high DDE exposure;human disturbance;correlative;telomere length;qPCR
+48;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;-0.0921;35;N;juveniles;yes;both;2016;blood;short;high PCB exposure;human disturbance;correlative;telomere length;qPCR
+49;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;0.1749;35;N;juveniles;yes;both;2016;blood;short;high PFOS lin exposure;human disturbance;correlative;telomere length;qPCR
+50;10.1016/j.scitotenv.2015.08.123;wild;Haliaeetus albicilla;bird;0.0226;35;N;juveniles;yes;both;2016;blood;short;high PFUNA exposure;human disturbance;correlative;telomere length;qPCR
+51;10.1111/j.1365-2435.2010.01825.x;wild;Pygoscelis adeliae;bird;0.050449408;46;N;adults;no;both;2011;blood;short;high cost of foraging;reproductive effort;experimental;telomere shortening;qPCR
+52;10.1098/rsbl.2010.0126;wild;Lacerta agilis;reptile;-0.205338084;68;Y;adults;yes;female;2010;blood;short;tail regeneration;development;correlative;telomere length;TRF
+53;10.1098/rsbl.2010.0126;wild;Lacerta agilis;reptile;0.237253613;56;Y;adults;yes;female;2010;blood;short;high number of ectoparasites;pathogen infection;correlative;telomere length;TRF
+54;10.1098/rsbl.2010.0126;wild;Lacerta agilis;reptile;-1.775415995;56;Y;adults;yes;male;2010;blood;short;high number of ectoparasites;pathogen infection;correlative;telomere length;TRF
+55;10.1098/rsbl.2010.0126;wild;Lacerta agilis;reptile;-0.30450526;68;Y;adults;yes;male;2010;blood;short;tail regeneration;pathogen infection;correlative;telomere length;TRF
+56;10.1098/rsbl.2012.1095;captivity;Glis glis;mammal;-0.688939057;20;Y;adults;yes;both;2013;ear tissue;long;low weight loss ;high activity level;correlative;telomere length;qPCR
+57;10.1098/rsbl.2014.0991;wild;Crocuta crocuta;mammal;-0.392368159;54;Y;adults;no;female;2015;blood;short;low social rank;competition;correlative;telomere length;TRF
+58;10.1098/rsbl.2014.0991;wild;Crocuta crocuta;mammal;-0.197009882;54;Y;adults;no;female;2015;blood;short;low number of prey per individual ;poor diet;correlative;telomere length;TRF
+59;10.1007/s00442-015-3429-9;wild;Parus major;bird;-0.202315922;88;Y;juveniles;yes;both;2016;blood;short;relative low body size/condition;competition;correlative;telomere shortening;qPCR
+60;10.1007/s00442-015-3429-9;wild;Parus major;bird;-0.200412497;88;N;juveniles;yes;both;2016;blood;short;high hatching rank;competition;correlative;telomere length;qPCR
+61;10.1111/1365-2435.12204;wild;Aptenodytes patagonicus;bird;-1.319277055;84;N;juveniles;yes;both;2014;blood;short;high hatching rank;low parental quality;correlative;telomere length;qPCR
+62;10.1098/rspb.2013.3151;wild;Phalacrocorax aristotelis;bird;-0.070217884;78;N;juveniles;yes;both;2014;blood;short;handling;human disturbance;experimental;telomere shortening;qPCR
+63;10.1098/rspb.2013.3151;wild;Phalacrocorax aristotelis;bird;-0.136783406;78;N;juveniles;yes;both;2014;blood;short;handling;human disturbance;experimental;telomere length;qPCR
+64;10.1098/rsbl.2006.0594;captivity;Mus musculus;mammal;-0.649999136;19;N;adults;yes;female;2007;blood;short;crowding;competition;experimental;telomere shortening;qPCR
+65;10.1098/rsbl.2006.0594;captivity;Mus musculus;mammal;-0.552712307;18;N;adults;yes;female;2007;blood;short;reproduction;reproductive effort;experimental;telomere shortening;qPCR
+66;10.1098/rsbl.2006.0594;captivity;Mus musculus;mammal;-0.40978286;20;N;adults;yes;male;2007;blood;short;crowding;reproductive effort;experimental;telomere shortening;qPCR
+67;10.1098/rsbl.2006.0594;captivity;Mus musculus;mammal;0.065253169;18;N;adults;yes;male;2007;blood;short;reproduction;competition;experimental;telomere shortening;qPCR
+68;10.1016/j.scitotenv.2016.09.131;wild;Parus major;bird;-0.595864075;21;N;juveniles;yes;both;2016;liver;long;high MTE exposure;human disturbance;correlative;telomere length;qPCR
+69;10.1016/j.scitotenv.2016.09.131;wild;Ficedula hypoleuca;bird;-0.034713937;24;N;juveniles;yes;both;2016;liver;long;high MTE exposure;human disturbance;correlative;telomere length;qPCR
+70;10.1016/j.scitotenv.2016.09.131;wild;Parus major;bird;0.017001638;23;N;adults;no;female;2016;liver;long;high MTE exposure;human disturbance;correlative;telomere length;qPCR
+71;10.1016/j.scitotenv.2016.09.131;wild;Ficedula hypoleuca;bird;-0.019702549;22;N;adults;no;female;2016;liver;long;high MTE exposure;human disturbance;correlative;telomere length;qPCR
+72;10.1016/j.scitotenv.2016.09.131;wild;Parus major;bird;-0.541337848;21;N;juveniles;yes;both;2016;liver;long;relative low body condition;competition;correlative;telomere length;qPCR
+73;10.1016/j.scitotenv.2016.09.131;wild;Ficedula hypoleuca;bird;-0.079164965;24;N;juveniles;yes;both;2016;liver;long;relative low body condition;competition;correlative;telomere length;qPCR
+74;10.1242/jeb.140871;wild;Glis glis;mammal;-0.797434375;15;N;adults;yes;both;2016;buccal mucosa;short;high arousal rate during hibernation;high activity level;correlative;telomere shortening;qPCR
+75;10.1242/jeb.140871;wild;Glis glis;mammal;-0.479446224;50;N;adults;yes;both;2016;buccal mucosa;short;no food supplementation;poor diet;experimental;telomere shortening;qPCR
+76;10.1242/jeb.140871;wild;Glis glis;mammal;-0.514959005;15;N;adults;yes;both;2016;buccal mucosa;short;low weight loss;high activity level;correlative;telomere shortening;qPCR
+77;10.1242/jeb.140871;wild;Glis glis;mammal;-0.500232517;15;N;adults;yes;both;2016;buccal mucosa;short;low hibernation duration;high activity level;correlative;telomere shortening;qPCR
+78;10.1111/jeb.12680;wild;Clamator glandarius;bird;0.536060337;18;N;juveniles;yes;both;2015;blood;short;late laying date;low parental quality;correlative;telomere length;qPCR
+79;10.1111/jeb.12680;wild;Pica pica;bird;-0.472230804;26;N;juveniles;yes;both;2015;blood;short;late laying date;low parental quality;correlative;telomere length;qPCR
+80;10.1111/jeb.12680;wild;Pica pica;bird;-0.497311288;26;N;juveniles;yes;both;2015;blood;short;late laying date;low parental quality;correlative;telomere shortening;qPCR
+81;10.1111/jeb.12680;wild;Clamator glandarius;bird;-0.010000333;18;N;juveniles;yes;both;2015;blood;short;late laying date;low parental quality;correlative;telomere shortening;qPCR
+82;10.1111/j.1469-7998.2010.00774.x;wild;Larus fuscus;bird;-0.199297402;68;Y;juveniles;yes;both;2011;blood;short;lage hatchling size;development;correlative;telomere length;TRF
+83;10.1111/j.1469-7998.2010.00774.x;wild;Larus fuscus;bird;0.549306144;68;Y;juveniles;yes;both;2011;blood;short;late laying date;low parental quality;correlative;telomere length;TRF
+84;10.1111/j.1469-7998.2010.00774.x;wild;Larus fuscus;bird;-0.674963358;68;Y;juveniles;yes;both;2011;blood;short;high hatching rank;competition;correlative;telomere length;TRF
+85;10.1111/j.1469-7998.2010.00774.x;wild;Larus fuscus;bird;0.892535241;34;Y;juveniles;yes;both;2011;blood;short;high growth rate;development;correlative;telomere length;TRF
+86;10.1111/j.1469-7998.2010.00774.x;wild;Larus fuscus;bird;0.549306144;34;Y;juveniles;yes;both;2011;blood;short;late laying date;low parental quality;correlative;telomere length;TRF
+87;10.1007/s00442-015-3263-0;wild;Salmo trutta;fish;0.013425742;280;N;juveniles;yes;both;2015;fin tissue;short;diet recuperation;reproductive effort;experimental;telomere shortening;qPCR
+88;10.1007/s00442-015-3263-0;wild;Salmo trutta;fish;-0.224707214;15;N;juveniles;yes;both;2015;fin tissue;short;low initial mass;development;correlative;telomere shortening;qPCR
+89;10.1007/s00442-015-3263-0;wild;Salmo trutta;fish;0.266108407;15;N;juveniles;yes;both;2015;fin tissue;short;high growth rate;development;correlative;telomere shortening;qPCR
+90;10.1111/1365-2435.12041;wild;Setophaga ruticilla;bird;-0.860470487;15;N;adults;yes;male;2013;blood;short;poor wintering habitat quality;harsh abiotic condition;correlative;telomere shortening;qPCR
+91;10.1111/1365-2435.12041;wild;Setophaga ruticilla;bird;0.223971389;40;Y;adults;yes;male;2013;blood;short;poor wintering habitat quality;harsh abiotic condition;correlative;telomere length;qPCR
+92;10.1098/rspb.2012.2540;wild;Sterna hirundo;bird;-0.1497;181;N;adults;yes;both;2013;blood;short;early arrival date;reproductive effort;correlative;telomere length;TRF
+93;10.1098/rspb.2012.2540;wild;Sterna hirundo;bird;-0.1627;122;N;adults;yes;female;2013;blood;short;high number of fledglings;reproductive effort;correlative;telomere length;TRF
+94;10.1098/rspb.2012.2540;wild;Sterna hirundo;bird;-0.312;117;N;adults;yes;male;2013;blood;short;high number of fledglings;reproductive effort;correlative;telomere length;TRF
+95;10.1098/rspb.2012.2540;wild;Sterna hirundo;bird;-0.348;50;N;adults;yes;both;2013;blood;short;large brood size;reproductive effort;correlative;telomere shortening;TRF
+96;10.1111/mec.13670;wild;Acrocephalus sechellensis;bird;-0.001300001;568;Y;adults;yes;both;2016;blood;short;low food availability;poor diet;correlative;telomere length;qPCR
+97;10.1098/rspb.2004.2768;wild;Phalacrocorax aristotelis;bird;-0.639;16;Y;adults;yes;both;2004;blood;short;late laying date;low parental quality;correlative;telomere shortening;TRF
+98;10.1098/rspb.2004.2768;wild;Phalacrocorax aristotelis;bird;0.836968425;16;N;adults;yes;both;2004;blood;short;low body condition;low body condition;correlative;telomere shortening;TRF
+99;10.1371/journal.pone.0040855;wild;Dermochelys coriacea;reptile;0.594885206;22;Y;adults;no;female;2012;blood;short;high number of clutches;reproductive effort;correlative;telomere length;qPCR
+100;10.1186/s12983-016-0133-5;wild;Aphrastura spinicauda;bird;-1.127029026;60;N;juveniles;yes;both;2016;blood;short;large brood size;competition;correlative;telomere length;qPCR
+101;10.1186/s12983-016-0133-5;wild;Aphrastura spinicauda;bird;-0.907644983;33;N;juveniles;yes;both;2016;blood;short;large brood size;competition;correlative;telomere length;qPCR
+102;10.1186/s12983-016-0133-5;wild;Aphrastura spinicauda;bird;-0.199921628;93;Y;juveniles;yes;both;2016;blood;short;low latitude;harsh abiotic condition;correlative;telomere length;qPCR
+103;10.1098/rsbl.2015.0559;wild;Passer domesticus;bird;-0.484460502;37;N;juveniles;yes;both;2015;blood;short;high traffic noise exposure;human disturbance;experimental;telomere length;qPCR
+104;10.1098/rsbl.2015.0559;wild;Passer domesticus;bird;-0.11601775;58;Y;juveniles;yes;both;2015;blood;short;large brood size;competition;correlative;telomere length;qPCR
+105;10.1098/rsbl.2015.0559;wild;Passer domesticus;bird;0.205650931;58;Y;juveniles;yes;both;2015;blood;short;low body condition;low body condition;correlative;telomere length;qPCR
+106;10.1242/jeb.104265;wild;Hydrobates pelagicus;bird;0.2026;59;Y;juveniles;yes;both;2015;blood;short;high visitor disturbance;human disturbance;correlative;telomere length;qPCR
+107;10.1242/jeb.104265;wild;Hydrobates pelagicus;bird;0.1163;59;Y;juveniles;yes;both;2015;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+108;10.1242/jeb.104265;wild;Hydrobates pelagicus;bird;0.156;55;Y;juveniles;yes;both;2015;blood;short;high visitor disturbance;human disturbance;correlative;telomere shortening;qPCR
+109;10.1242/jeb.104265;wild;Hydrobates pelagicus;bird;-0.1138;55;Y;juveniles;yes;both;2015;blood;short;late hatching date;low parental quality;correlative;telomere shortening;qPCR
+110;10.1242/jeb.104265;wild;Hydrobates pelagicus;bird;-0.2499;55;Y;juveniles;yes;both;2015;blood;short;poor weather conditions;harsh abiotic condition;correlative;telomere length;qPCR
+111;10.1098/rsbl.2016.0077;captivity;Ctenophorus pictus;reptile;-0.326086553;53;Y;adults;no;both;2016;blood;short;good colouration maintenance ;low body condition;correlative;telomere shortening;qPCR
+112;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-1.574;5;Y;adults;yes;female;2015;muscle;long;large body size;development;correlative;telomere length;qPCR
+113;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.3724;5;Y;adults;yes;female;2015;brain;long;large body size;development;correlative;telomere length;qPCR
+114;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.2848;5;Y;adults;yes;female;2015;muscle;long;large body size;development;correlative;telomere length;qPCR
+115;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;1.574;5;Y;adults;yes;female;2015;brain;long;large body size;development;correlative;telomere length;qPCR
+116;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.4858;5;Y;adults;yes;male;2015;muscle;long;large body size;development;correlative;telomere length;qPCR
+117;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.9866;5;Y;adults;yes;male;2015;brain;long;large body size;development;correlative;telomere length;qPCR
+118;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;1.8999;5;Y;adults;yes;male;2015;muscle;long;large body size;development;correlative;telomere length;qPCR
+119;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;0.7391;5;Y;adults;yes;male;2015;brain;long;large body size;development;correlative;telomere length;qPCR
+120;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-1.6851;5;Y;adults;yes;female;2015;muscle;long;high relative gonad size;reproductive effort;correlative;telomere length;qPCR
+121;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-1.5078;5;Y;adults;yes;female;2015;brain;long;high relative gonad size;reproductive effort;correlative;telomere length;qPCR
+122;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.9168;5;Y;adults;yes;male;2015;muscle;long;high relative gonad size;reproductive effort;correlative;telomere length;qPCR
+123;10.1371/journal.pone.0125674;captivity;Menidia menidia;fish;-0.4364;5;Y;adults;yes;male;2015;brain;long;high relative gonad size;reproductive effort;correlative;telomere length;qPCR
+124;10.1643/CI-11-162;wild;Cyprinus carpio;fish;0.438740619;73;Y;both;no;both;2014;muscle;long;high fork length;development;correlative;telomere length;qPCR
+125;10.1643/CI-11-162;wild;Cyprinus carpio;fish;0.077152721;73;N;both;no;both;2014;fin tissue;short;high fork length;development;correlative;telomere length;qPCR
+126;10.1186/s12862-015-0436-8;laboratory;Oncorhynchus kisutch;fish;-0.230615167;38;N;adults;yes;both;2016;fin tissue;short;fast growth;development;experimental;telomere length;qPCR
+127;10.1186/s12862-015-0436-8;laboratory;Oncorhynchus kisutch;fish;0.257542322;38;N;adults;yes;both;2016;fin tissue;short;fin regeneration;development;experimental;telomere length;qPCR
+128;10.1371/journal.pone.0132602;captivity;Sturnus vulgaris;bird;-0.026806419;22;Y;juveniles;yes;both;2015;blood;short;large brood size;competition;experimental;telomere shortening;qPCR
+129;10.1371/journal.pone.0132602;captivity;Sturnus vulgaris;bird;-0.510070337;22;N;juveniles;yes;both;2015;blood;short;number of heavier siblings ;competition;correlative;telomere shortening;qPCR
+130;10.1371/journal.pone.0132602;captivity;Sturnus vulgaris;bird;-0.331647109;22;N;juveniles;yes;both;2015;blood;short;low body mass;competition;correlative;telomere shortening;qPCR
+131;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-0.87606033;7;N;juveniles;yes;male;1999;brain;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+132;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;0.383993479;7;N;juveniles;yes;male;1999;brain;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+133;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;0.259575166;7;N;juveniles;yes;male;1999;brain;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+134;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;0.049479808;7;N;juveniles;yes;male;1999;brain;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+135;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-0.481211825;7;N;juveniles;yes;male;1999;liver;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+136;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;0.210443262;7;N;juveniles;yes;male;1999;liver;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+137;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-0.718944655;7;N;juveniles;yes;male;1999;liver;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+138;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;0.283679841;7;N;juveniles;yes;male;1999;liver;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+139;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-1.035983794;7;N;juveniles;yes;male;1999;kidney;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+140;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-1.470805608;7;N;juveniles;yes;male;1999;kidney;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+141;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;-0.179533975;7;N;juveniles;yes;male;1999;kidney;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+142;10.1016/S0014-5793(99)00336-1;laboratory;Rattus norvegicus;mammal;1.371373159;7;N;juveniles;yes;male;1999;kidney;long;diet recuperation;poor diet;experimental;telomere length;qPCR
+143;10.1098/rsbl.2014.0938;laboratory;Taeniopygia guttata;bird;0.029189811;63;N;adults;yes;male;2015;blood;short;low micronutrient diet;poor diet;experimental;telomere shortening;qPCR
+144;10.1098/rsbl.2014.0938;laboratory;Taeniopygia guttata;bird;-0.285180384;63;N;adults;yes;female;2015;blood;short;low micronutrient diet;poor diet;experimental;telomere shortening;qPCR
+145;10.1098/rsbl.2014.0938;laboratory;Taeniopygia guttata;bird;0.06295249;63;N;adults;yes;male;2015;blood;short;low micronutrient diet;poor diet;experimental;telomere length;qPCR
+146;10.1098/rsbl.2014.0938;laboratory;Taeniopygia guttata;bird;-0.461000921;63;N;adults;yes;female;2015;blood;short;low micronutrient diet;poor diet;experimental;telomere length;qPCR
+147;10.1098/rsbl.2014.0938;laboratory;Taeniopygia guttata;bird;0.330088171;60;Y;adults;yes;both;2015;blood;short;low body mass ;low body condition;correlative;telomere length;qPCR
+148;10.1098/rspb.2015.2331;wild;Passer domesticus;bird;-0.352171575;44;Y;juveniles;yes;male;2015;blood;short;large body size;development;experimental;telomere length;qPCR
+149;10.1098/rspb.2015.2331;wild;Passer domesticus;bird;-0.516765808;44;Y;juveniles;yes;male;2015;blood;short;large body size;development;experimental;telomere length;qPCR
+150;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;-0.014197344;34;N;adults;yes;male;2011;skeletal muscle;long;caloric restriction;poor diet;experimental;telomere length;TRF
+151;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;-0.050859947;34;N;adults;yes;male;2011;fat;long;caloric restriction;poor diet;experimental;telomere length;TRF
+152;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;-0.080219064;34;N;adults;yes;male;2011;leukocytes;short;caloric restriction;poor diet;experimental;telomere length;TRF
+153;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;-0.120814891;34;N;adults;yes;male;2011;skin;short;caloric restriction;poor diet;experimental;telomere length;TRF
+154;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;0.102920724;36;N;adults;yes;female;2011;skeletal muscle;long;caloric restriction;poor diet;experimental;telomere length;TRF
+155;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;0.129337281;36;N;adults;yes;female;2011;fat;long;caloric restriction;poor diet;experimental;telomere length;TRF
+156;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;0.05189157;36;N;adults;yes;female;2011;leukocytes;short;caloric restriction;poor diet;experimental;telomere length;TRF
+157;10.1093/gerona/glr136;laboratory;Macaca mulatta;mammal;0.030776707;36;N;adults;yes;female;2011;skin;short;caloric restriction;poor diet;experimental;telomere length;TRF
+158;10.1111/jeb.12479;wild;Parus caeruleus;bird;-0.244561453;56;N;adults;yes;both;2014;blood;short;large brood size;competition;experimental;telomere shortening;qPCR
+159;10.1111/jeb.12479;wild;Parus caeruleus;bird;-0.173261705;56;N;adults;yes;both;2014;blood;short;large brood size;competition;experimental;telomere length;qPCR
+160;10.1242/dmm.026591;laboratory;Rattus norvegicus;mammal;-0.752456804;12;N;adults;yes;male;2016;muscle;long;diet recuperation;poor diet;experimental;telomere length;TRF
+161;10.1242/dmm.026591;laboratory;Rattus norvegicus;mammal;-1.33232957;12;n;adults;yes;male;2016;muscle;long;diet recuperation;poor diet;experimental;telomere length;TRF
+162;10.1242/dmm.026591;laboratory;Rattus norvegicus;mammal;0.243584073;12;N;adults;yes;male;2016;muscle;long;diet recuperation;poor diet;experimental;telomere length;TRF
+163;10.1242/dmm.026591;laboratory;Rattus norvegicus;mammal;1.482959312;12;N;adults;yes;male;2016;muscle;long;diet recuperation;poor diet;experimental;telomere length;TRF
+164;10.1098/rsbl.2011.0758;captivity;Phodopus sungorus;mammal;-0.620390703;25;N;adults;yes;female;2011;ear tissue;long;warm temperature;harsh abiotic condition;experimental;telomere shortening;qPCR
+165;10.1098/rsbl.2011.0758;captivity;Phodopus sungorus;mammal;-0.518575718;25;Y;adults;yes;female;2011;ear tissue;long;low torpor frequency;high activity level;experimental;telomere shortening;qPCR
+166;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.207018149;8;N;juveniles;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+167;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.346994628;8;N;juveniles;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+168;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.35264533;8;N;adults;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+169;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.315728266;8;N;adults;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+170;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.637858054;8;N;juveniles;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+171;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.090376917;8;N;juveniles;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+172;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.671407098;8;N;adults;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+173;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;1.615383103;8;N;adults;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+174;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.655940415;8;N;juveniles;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+175;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.156855999;8;N;juveniles;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+176;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.542930505;8;N;adults;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+177;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.546836216;8;N;adults;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+178;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.562383071;8;N;juveniles;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+179;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;-0.849916183;8;N;juveniles;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+180;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;0.604925216;8;N;adults;yes;male;2008;aortas;long;diet recuperation;poor diet;experimental;telomere length;TRF
+181;10.1096/fj.07-099523;laboratory;Rattus norvegicus;mammal;1.351411614;8;N;adults;yes;male;2008;aortas;long;low protein diet;poor diet;experimental;telomere length;TRF
+182;10.1371/journal.pone.0093839;captivity;Psittacus erithacus;bird;-0.658853626;45;N;adults;yes;both;2014;blood;short;social isolation;competition;experimental;telomere length;qPCR
+183;10.1371/journal.pone.0002143;laboratory;Mus musculus;mammal;-0.301506862;48;N;juveniles;yes;male;2008;blood;short;Salmonella infection;pathogen infection;experimental;telomere shortening;qPCR
+184;10.1371/journal.pone.0002143;laboratory;Mus musculus;mammal;-0.220524237;48;N;juveniles;yes;female;2008;blood;short;Salmonella infection;pathogen infection;experimental;telomere shortening;qPCR
+185;10.1086/687378;laboratory;Acipenser baerii;fish;-0.403922273;36;N;juveniles;yes;both;2016;blood;short;heat stress;harsh abiotic condition;experimental;telomere length;qPCR
+186;10.1093/icb/icw044;wild;Tachycineta bicolor;bird;-0.390742321;82;N;adults;no;both;2016;blood;short;high brood mass;reproductive effort;correlative;telomere length;TRF
+187;10.1098/rsbl.2016.0155;wild;Parus major;bird;-0.171563689;156;N;juveniles;yes;both;2016;blood;short;high urbanisation level;human disturbance;experimental;telomere length;qPCR
+188;10.1038/srep40794;captivity;Sturnus vulgaris;bird;-0.400898696;32;N;juveniles;yes;both;2017;blood;short;food restriction;poor diet;experimental;telomere shortening;qPCR
+189;10.1038/srep40794;captivity;Sturnus vulgaris;bird;-0.184287851;32;N;juveniles;yes;both;2017;blood;short;high begging frequency;poor diet;experimental;telomere shortening;qPCR
+190;10.1038/srep40794;captivity;Sturnus vulgaris;bird;-0.308552083;32;N;juveniles;yes;both;2017;blood;short;diet recuperation;poor diet;experimental;telomere shortening;qPCR
+191;10.1038/srep40794;captivity;Sturnus vulgaris;bird;-0.003259885;32;N;juveniles;yes;both;2017;blood;short;diet recuperation;poor diet;experimental;telomere shortening;qPCR
+192;10.1093/conphys/cow073;wild;Fregata magnificens;bird;0.301844856;31;N;juveniles;no;both;2017;blood;short;herpesvirus prevalence;pathogen infection;correlative;telomere length;TRF
+193;10.1007/s00265-016-2226-8;laboratory;Taeniopygia guttata;bird;-0.197321696;71;N;adults;yes;both;2016;blood;short;large brood size;reproductive effort;experimental;telomere shortening;qPCR
+194;10.1002/ece3.2551;wild;Sturnus vulgaris;bird;-0.674909392;17;N;juveniles;yes;both;2016;blood;short;relative low body size;competition;correlative;telomere shortening;qPCR
+195;10.1002/ece3.2551;wild;Sturnus vulgaris;bird;0.125047737;155;N;juveniles;yes;both;2016;blood;short;large brood size;competition;correlative;telomere shortening;qPCR
+196;10.1111/ibi.12402;wild;Hydrobates pelagicus;bird;-0.142455893;26;Y;adults;yes;both;2016;blood;short;handling;human disturbance;experimental;telomere length;qPCR
+197;10.1002/ecs2.1544;wild;Vultur gryphus;bird;-2.716609973;11;N;adults;no;female;2016;blood;short;long distance to the feeding areas ;reproductive effort;correlative;telomere length;qPCR
+198;10.1002/ecs2.1544;wild;Vultur gryphus;bird;3.004607124;9;N;adults;no;male;2016;blood;short;long distance to the feeding areas ;reproductive effort;correlative;telomere length;qPCR
+199;10.1642/AUK-16-56.1;wild;Junco hyemalis;bird;-0.369437955;32;N;adults;yes;both;2016;blood;short;migration;high activity level;correlative;telomere length;qPCR
+200;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-0.556129449;39;Y;juveniles;no;both;2016;blood;short;malaria infection intensity;pathogen infection;experimental;telomere shortening;qPCR
+201;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-0.7918;13;Y;juveniles;no;both;2016;blood;short;malaria infection;pathogen infection;experimental;telomere length;qPCR
+202;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-1.4855;13;Y;juveniles;no;both;2016;liver;long;malaria infection;pathogen infection;experimental;telomere length;qPCR
+203;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-1.024;13;Y;juveniles;no;both;2016;lung;short;malaria infection;pathogen infection;experimental;telomere length;qPCR
+204;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-1.2048;13;Y;juveniles;no;both;2016;heart;long;malaria infection;pathogen infection;experimental;telomere length;qPCR
+205;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-0.6688;13;Y;juveniles;no;both;2016;kidney;long;malaria infection;pathogen infection;experimental;telomere length;qPCR
+206;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-1.024;13;Y;juveniles;no;both;2016;spleen;short;malaria infection;pathogen infection;experimental;telomere length;qPCR
+207;10.1098/rspb.2016.1184;captivity;Carduelis spinus;bird;-0.963;13;Y;juveniles;no;both;2016;brain;long;malaria infection;pathogen infection;experimental;telomere length;qPCR
+208;10.1371/journal.pone.0167261;wild;Larus crassirostris;bird;-0.6043;41;N;juveniles;yes;both;2016;blood;short;large brood size;competition;correlative;telomere shortening;TRF
+209;10.1371/journal.pone.0167261;wild;Larus crassirostris;bird;-0.7636;14;N;juveniles;yes;both;2016;blood;short;high sibling rank;competition;correlative;telomere shortening;TRF
+210;10.1371/journal.pone.0167261;wild;Larus crassirostris;bird;-0.41;14;N;juveniles;yes;both;2016;blood;short;high sibling rank;competition;correlative;telomere length;TRF
+211;10.1371/journal.pone.0167261;wild;Larus crassirostris;bird;-0.538;41;N;juveniles;yes;both;2016;blood;short;large brood size;competition;correlative;telomere length;TRF
+212;10.1111/mec.13857;laboratory;Salmo salar;fish;-0.133181887;732;Y;juveniles;yes;both;2016;all tissues;long;low temperature;harsh abiotic condition;correlative;telomere length;qPCR
+213;10.1111/mec.13857;laboratory;Salmo salar;fish;-0.107411176;733;Y;juveniles;yes;both;2016;all tissues;long;high fry density;competition;correlative;telomere length;qPCR
+214;10.1016/j.neuroscience.2016.07.033;laboratory;Danio rerio;fish;-0.532382265;19;Y;adults;yes;both;2016;brain;long;food restriction;poor diet;experimental;telomere length;qPCR
+215;10.1016/j.neuroscience.2016.07.033;laboratory;Danio rerio;fish;-0.215159835;19;Y;adults;yes;both;2016;spleen;short;food restriction;poor diet;experimental;telomere length;qPCR
+216;10.1016/j.neuroscience.2016.07.033;laboratory;Danio rerio;fish;-0.452415949;19;Y;adults;yes;both;2016;muscle;long;food restriction;poor diet;experimental;telomere length;qPCR
+217;10.1016/j.neuroscience.2016.07.033;laboratory;Danio rerio;fish;-0.729598531;19;Y;adults;yes;both;2016;tail;short;food restriction;poor diet;experimental;telomere length;qPCR
+218;10.1016/j.neuroscience.2016.07.033;laboratory;Danio rerio;fish;-0.244880227;19;Y;adults;yes;both;2016;brain;long;food restriction;poor diet;experimental;telomere length;TRF
+219;10.7717/peerj.3094;laboratory;Taeniopygia guttata;bird;0.188708575;40;Y;adults;yes;both;2017;blood;short;fluctuating diet;poor diet;experimental;telomere shortening;qPCR
+220;10.7717/peerj.3094;laboratory;Taeniopygia guttata;bird;0.134199867;40;Y;adults;yes;both;2017;blood;short;large brood size;reproductive effort;experimental;telomere shortening;qPCR
+221;10.1098/rspb.2016.2146;captivity;Thamnophis sirtalis;reptile;-0.379300687;72;Y;adults;yes;both;2017;blood;short;low body condition;low body condition;correlative;telomere shortening;qPCR
+222;10.1098/rspb.2016.2146;captivity;Thamnophis sirtalis;reptile;0.028407639;72;Y;adults;yes;both;2017;blood;short;high body size;development;correlative;telomere shortening;qPCR
+223;10.1111/mec.14121;wild;Rissa tridactyla;bird;-0.135573918;79;N;juveniles;yes;both;2017;blood;short;low food availability;poor diet;experimental;telomere shortening;TRF
+224;10.1111/mec.14121;wild;Rissa tridactyla;bird;-0.341300031;75;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere shortening;TRF
+225;10.1111/mec.14121;wild;Rissa tridactyla;bird;0.152853972;67;N;juveniles;yes;both;2017;blood;short;high hatching rank;competition;correlative;telomere shortening;TRF
+226;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.244880227;105;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere length;qPCR
+227;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.637214568;24;N;juveniles;yes;both;2017;blood;short;low plumage dakness;low body condition;correlative;telomere length;qPCR
+228;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.234189467;24;N;juveniles;yes;both;2017;blood;short;low plumage dakness;low body condition;correlative;telomere length;qPCR
+229;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.454999602;24;N;juveniles;yes;both;2017;blood;short;poor UV colouration;low body condition;correlative;telomere length;qPCR
+230;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.225758808;101;N;juveniles;yes;both;2017;blood;short;poor UV colouration;low body condition;correlative;telomere length;qPCR
+231;10.1093/beheco/arw147;wild;Hirundo rustica;bird;0.235245578;24;N;juveniles;yes;both;2017;blood;short;low body mass;low body condition;correlative;telomere length;qPCR
+232;10.1093/beheco/arw147;wild;Hirundo rustica;bird;0.090244188;97;N;juveniles;yes;both;2017;blood;short;low body mass;low body condition;correlative;telomere length;qPCR
+233;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.45622195;24;N;juveniles;yes;both;2017;blood;short;high tarsus length;development;correlative;telomere length;qPCR
+234;10.1093/beheco/arw147;wild;Hirundo rustica;bird;-0.218407819;103;N;juveniles;yes;both;2017;blood;short;high tarsus length;development;correlative;telomere length;qPCR
+235;10.1016/j.jtherbio.2018.01.004;captivity;Agama agama;reptile;0.414979049;20;N;adults;no;both;2018;heart;long;high temperature;harsh abiotic condition;experimental;telomere length;qPCR
+236;10.1016/j.jtherbio.2018.01.004;captivity;Agama agama;reptile;-0.790979245;20;N;adults;no;both;2018;heart;long;heat wave;harsh abiotic condition;experimental;telomere length;qPCR
+237;10.1007/s00442-017-3913-5;captivity;Pungitius pungitius;fish;0.198398705;83;N;both;no;both;2017;brain;long;high temperature;harsh abiotic condition;experimental;telomere length;qPCR
+238;10.1007/s00442-017-3913-5;captivity;Pungitius pungitius;fish;-0.070114671;83;N;both;no;both;2017;brain;long;maturation;reproductive effort;experimental;telomere length;qPCR
+239;10.1098/rsbl.2017.0434;wild;Capreolus capreolus;mammal;-0.197163618;129;N;adults;yes;both;2017;leukocytes;short;poor habitat quality;harsh abiotic condition;correlative;telomere length;qPCR
+240;10.1098/rsbl.2017.0434;wild;Capreolus capreolus;mammal;0.082184534;129;N;adults;yes;both;2017;leukocytes;short;low body condition;low body condition;correlative;telomere length;qPCR
+241;10.1038/s41598-019-42804-8;wild;Ctenomys torquatus;mammal;-0.32547311;66;Y;both;no;both;2019;all tissues;long;high coal exposure;human disturbance;correlative;telomere length;qPCR
+242;10.1016/j.scitotenv.2018.12.469;wild;Parus major;bird;0.027464044;206;N;juveniles;yes;both;2019;blood;short;high light pollution;human disturbance;experimental;telomere length;qPCR
+243;10.1016/j.scitotenv.2018.12.469;wild;Parus major;bird;-0.211472881;206;Y;juveniles;yes;both;2019;blood;short;low body condition;low body condition;correlative;telomere length;qPCR
+244;10.1016/j.scitotenv.2018.12.469;wild;Parus major;bird;-0.028841771;206;Y;juveniles;yes;both;2019;blood;short;low relative size;competition;correlative;telomere length;qPCR
+245;10.1098/rsbl.2018.0637;wild;Parus caeruleus;bird;-0.321698901;48;Y;adults;yes;both;2019;blood;short;high fledging number;reproductive effort;correlative;telomere shortening;qPCR
+246;10.1038/s41467-019-09229-3;wild;Acrocephalus sechellensis;bird;-0.264536663;42;N;adults;yes;female;2019;blood;short;low helper presence;reproductive effort;correlative;telomere shortening;qPCR
+247;10.1038/s41467-019-09229-3;wild;Acrocephalus sechellensis;bird;-0.048023922;72;N;adults;yes;male;2019;blood;short;low helper presence;reproductive effort;correlative;telomere shortening;qPCR
+248;10.1111/1365-2656.12927;captivity;Gasterosteus aculeatus;fish;0;89;N;adults;yes;male;2019;muscle ;long;high winter temperature;harsh abiotic condition;experimental;telomere length;qPCR
+249;10.1111/1365-2656.12927;captivity;Gasterosteus aculeatus;fish;-0.114530733;90;N;adults;yes;male;2019;sperm;short;high winter temperature;harsh abiotic condition;experimental;telomere length;qPCR
+250;10.1111/jeb.13400;wild;Zonotrichia albicollis;bird;-0.230083743;118;Y;juveniles;yes;both;2019;red blood cells;short;high growth rate;development;correlative;telomere length;qPCR
+251;10.1111/jeb.13400;wild;Zonotrichia albicollis;bird;0.117644977;118;Y;juveniles;yes;both;2019;red blood cells;short;low relative size;competition;correlative;telomere length;qPCR
+252;10.1111/jeb.13400;wild;Zonotrichia albicollis;bird;-0.090680692;118;Y;juveniles;yes;both;2019;red blood cells;short;large brood size;competition;correlative;telomere length;qPCR
+253;10.1111/jeb.13400;wild;Zonotrichia albicollis;bird;0.050673138;118;Y;juveniles;yes;both;2019;red blood cells;short;late nest date;low parental quality;correlative;telomere length;qPCR
+254;10.1038/s41598-017-07201-z;captivity;Pelobates_cultripes_ott703772;amphibian;0.036105418;324;Y;juveniles;yes;both;2017;muscle ;long;pond drying;harsh abiotic condition;experimental;telomere length;qPCR
+255;10.1038/s41598-017-07201-z;captivity;Pelobates_cultripes_ott703772;amphibian;-0.052518093;324;Y;juveniles;yes;both;2017;muscle ;long;predator exposure;harsh abiotic condition;experimental;telomere length;qPCR
+256;10.1038/s41598-017-07201-z;captivity;Pelobates_cultripes_ott703772;amphibian;-0.271021547;324;N;juveniles;yes;both;2017;muscle ;long;high growth rate;development;correlative;telomere length;qPCR
+261;10.1111/mec.14952;wild;Junco hyemalis;bird;-0.136157988;106;Y;adults;no;female;2019;blood;short;high egg number;reproductive effort;correlative;telomere shortening;qPCR
+262;10.1111/mec.14952;wild;Junco hyemalis;bird;0.096426497;106;Y;adults;no;female;2019;blood;short;high fledging number;reproductive effort;correlative;telomere shortening;qPCR
+263;10.1111/mec.14952;wild;Junco hyemalis;bird;-0.161386696;89;N;adults;no;female;2019;blood;short;cold temperature;harsh abiotic condition;correlative;telomere shortening;qPCR
+264;10.1111/mec.14953;wild;Junco hyemalis;bird;-0.309519604;106;N;adults;no;female;2020;blood;short;breeding date;reproductive effort;correlative;telomere shortening;qPCR
+265;10.1098/rspb.2017.1383;wild;Suricata suricatta;mammal;-0.275960379;230;Y;juveniles;yes;both;2017;skin;short;high number of pups;competition;correlative;telomere length;qPCR
+266;10.1098/rspb.2017.1383;wild;Suricata suricatta;mammal;-0.198302297;230;N;juveniles;yes;both;2017;skin;short;low mother social status;low parental quality;correlative;telomere length;qPCR
+267;10.1098/rspb.2017.1383;wild;Suricata suricatta;mammal;-0.076146835;230;N;juveniles;yes;both;2017;skin;short;number of helpers;low parental quality;correlative;telomere length;qPCR
+268;10.1098/rspb.2017.1383;wild;Suricata suricatta;mammal;-0.083191387;230;N;juveniles;yes;both;2017;skin;short;low rainfall;harsh abiotic condition;correlative;telomere length;qPCR
+269;10.1098/rspb.2017.1383;wild;Suricata suricatta;mammal;0.173726908;230;N;juveniles;yes;both;2017;skin;short;low mother mass;low parental quality;correlative;telomere length;qPCR
+270;10.1111/jav.01686;wild;Sturnus unicolor;bird;0.124400803;47;Y;juveniles;yes;both;2018;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+271;10.1111/jav.01686;wild;Sturnus unicolor;bird;-0.303710277;47;Y;juveniles;yes;both;2018;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+272;10.1007/s10682-017-9885-4;wild;Ursus americanus;mammal;0.202732554;195;N;both;yes;both;2017;skin;short;low habitat productivity;harsh abiotic condition;correlative;telomere length;qPCR
+273;10.1007/s10682-017-9885-4;wild;Ursus americanus;mammal;-0.096212409;195;N;both;yes;both;2017;skin;short;high housing density;human disturbance;correlative;telomere length;qPCR
+274;10.1007/s10682-017-9885-4;wild;Ursus americanus;mammal;0.32745015;195;N;both;yes;both;2017;skin;short;low latitude;harsh abiotic condition;correlative;telomere length;qPCR
+275;10.1007/s10682-017-9885-4;wild;Ursus americanus;mammal;-0.031633324;195;N;both;yes;both;2017;skin;short;low elevation;harsh abiotic condition;correlative;telomere length;qPCR
+276;10.1038/s41598-018-37164-8;wild;Clethrionomys_glareolus;mammal;-0.125478915;41;N;both;no;both;2019;liver;long;high radiation exposure;human disturbance;correlative;telomere length;qPCR
+277;10.1038/s41598-018-37164-8;wild;Clethrionomys_glareolus;mammal;-0.114978625;41;N;both;no;both;2019;brain;long;high radiation exposure;human disturbance;correlative;telomere length;qPCR
+278;10.1038/s41598-018-37164-8;wild;Clethrionomys_glareolus;mammal;-0.329263155;40;N;both;no;both;2019;heart;long;high radiation exposure;human disturbance;correlative;telomere length;qPCR
+279;10.1038/s41598-018-37164-8;wild;Clethrionomys_glareolus;mammal;-0.027636202;22;N;both;no;both;2019;testis;short;high radiation exposure;human disturbance;correlative;telomere length;qPCR
+280;10.1038/s41598-018-37164-8;wild;Clethrionomys_glareolus;mammal;0.589183106;21;N;both;no;both;2019;ovary;long;high radiation exposure;human disturbance;correlative;telomere length;qPCR
+281;10.3389/fevo.2017.00079;wild;Parus major;bird;0.029606099;424;Y;juveniles;yes;both;2017;red blood cells;short;high urbanisation;human disturbance;correlative;telomere length;qPCR
+282;10.1111/jeb.13396;wild;Sturnus unicolor;bird;-0.006177981;264;Y;juveniles;yes;both;2019;red blood cells;short;large brood size;competition;experimental;telomere length;qPCR
+283;10.1074/jbc.RA117.000808;laboratory;Mus musculus;mammal;-0.227316915;20;N;juveniles;yes;male;2018;leukocytes;short;high-fat high-sucrose diet;poor diet;experimental;telomere length;qPCR
+284;10.1074/jbc.RA117.000808;laboratory;Mus musculus;mammal;-0.113135941;36;N;juveniles;yes;male;2018;leukocytes;short;high-fat high-sucrose diet;poor diet;experimental;telomere length;qPCR
+285;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.716974594;11;Y;adults;no;both;2019;red blood cells;short;high total contaminant exposure;human disturbance;correlative;telomere length;qPCR
+286;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.654960691;11;N;adults;no;both;2019;red blood cells;short;high PCB exposure;human disturbance;correlative;telomere length;qPCR
+287;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.470991401;11;N;adults;no;both;2019;red blood cells;short;high PBDE exposure;human disturbance;correlative;telomere length;qPCR
+288;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.845572697;11;Y;adults;no;both;2019;red blood cells;short;high OC exposure;human disturbance;correlative;telomere length;qPCR
+289;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.640147536;11;N;adults;no;both;2019;red blood cells;short;high PFAS exposure;human disturbance;correlative;telomere length;qPCR
+290;10.1016/j.envpol.2019.01.025;wild;Cepphus grylle;bird;-0.403570654;11;N;adults;no;both;2019;red blood cells;short;high mercury exposure;human disturbance;correlative;telomere length;qPCR
+291;10.1111/1365-2435.13307;wild;Thalassarche melanophrys;bird;0.440583143;61;Y;adults;no;both;2019;blood;short;large body size;development;correlative;telomere length;TRF
+292;10.1002/ece3.3128;wild;Spheniscus magellanicus;bird;0.165820047;37;N;adults;yes;both;2017;blood;short;high number of reproduction attempts;reproductive effort;correlative;telomere length;qPCR
+293;10.1242/jeb.196030;captivity;Erythrura gouldiae;bird;0;102;N;adults;yes;both;2019;red blood cells;short;moulting;development;experimental;telomere shortening;TRF
+294;10.1242/jeb.196030;captivity;Erythrura gouldiae;bird;0.109639503;66;N;adults;yes;both;2019;red blood cells;short;breeding;reproductive effort;experimental;telomere shortening;TRF
+295;10.1098/rsbl.2017.0188;wild;Tachymarptis melba;bird;0.050041729;98;N;juveniles;yes;both;2017;blood;short;large brood size;competition;experimental;telomere length;qPCR
+296;10.1098/rsbl.2017.0188;wild;Tachymarptis melba;bird;-0.090244188;98;N;juveniles;yes;both;2017;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+297;10.1098/rspb.2017.1127;wild;Strix aluco;bird;-0.294224505;158;N;adults;yes;both;2017;blood;short;haemosporidian prevalence;pathogen infection;correlative;telomere length;qPCR
+298;10.1098/rspb.2017.1127;wild;Strix aluco;bird;-0.060072156;158;N;adults;yes;both;2017;blood;short;haemosporidian intensity;pathogen infection;correlative;telomere length;qPCR
+299;10.1016/j.envpol.2017.06.060;wild;Rissa tridactyla;bird;0.080171325;40;N;adults;no;both;2017;red blood cells;short;high PFASs exposure;human disturbance;correlative;telomere length;TRF
+300;10.1016/j.envpol.2017.06.060;wild;Rissa tridactyla;bird;0.594326311;17;N;adults;no;both;2017;red blood cells;short;high PFASs exposure;human disturbance;correlative;telomere shortening;TRF
+301;10.1186/s12862-017-1004-1;captivity;Rana_temporaria_temporaria_ott979590;amphibian;0.004677415;102.93;N;juveniles;yes;both;2017;muscle ;long;pond drying;harsh abiotic condition;experimental;telomere length;qPCR
+302;10.1016/j.cub.2018.07.021;wild;Suricata suricatta;mammal;0.558837461;35;Y;adults;yes;both;2018;blood;short;low social rank;competition;correlative;telomere shortening;qPCR
+303;10.1371/journal.pone.0193526;wild;Thalassarche melanophrys;bird;0.105388448;51;N;juveniles;yes;both;2018;feather;short;low body condition;low body condition;correlative;telomere length;TRF
+304;10.1111/mec.13992;wild;Ovis aries;mammal;0.047034654;427;N;adults;yes;both;2017;leukocytes;short;fecal egg count;pathogen infection;correlative;telomere length;qPCR
+305;10.1111/mec.13992;wild;Ovis aries;mammal;-0.148072785;142;N;juveniles;yes;male;2017;leukocytes;short;high horn length;reproductive effort;correlative;telomere length;qPCR
+306;10.1111/mec.13992;wild;Ovis aries;mammal;-0.070114671;191;N;adults;yes;male;2017;leukocytes;short;high horn length;reproductive effort;correlative;telomere length;qPCR
+307;10.1007/s00114-019-1601-5;wild;Parus caeruleus;bird;-0.131968018;105;N;adults;yes;male;2019;blood;short;Plasmodium prevalence;pathogen infection;correlative;telomere length;qPCR
+308;10.1007/s00114-019-1601-5;wild;Parus caeruleus;bird;0.29412931;44;N;adults;yes;male;2019;blood;short;Haemoproteus prevalence;pathogen infection;correlative;telomere length;qPCR
+309;10.1007/s00114-019-1601-5;wild;Parus caeruleus;bird;0.056118923;89;N;adults;yes;female;2019;blood;short;Plasmodium prevalence;pathogen infection;correlative;telomere length;qPCR
+310;10.1007/s00114-019-1601-5;wild;Parus caeruleus;bird;0.06134967;56;N;adults;yes;female;2019;blood;short;Haemoproteus prevalence;pathogen infection;correlative;telomere length;qPCR
+311;10.1007/s00114-019-1601-5;wild;Parus caeruleus;bird;0.048693698;246;Y;adults;yes;both;2019;blood;short;malaria prevalence;pathogen infection;correlative;telomere length;qPCR
+312;10.1002/ece3.2948;wild;Geothlypis trichas;bird;-0.201691104;109;N;adults;yes;male;2017;blood;short;low UV brightness;reproductive effort;correlative;telomere length;qPCR
+313;10.1002/ece3.2948;wild;Geothlypis trichas;bird;-0.20690272;47;N;adults;yes;male;2017;blood;short;high yellow brightness;reproductive effort;correlative;telomere shortening;qPCR
+314;10.1002/ece3.2948;wild;Geothlypis trichas;bird;-0.142966145;47;N;adults;yes;male;2017;blood;short;low yellow croma;reproductive effort;correlative;telomere shortening;qPCR
+315;10.1002/ece3.2948;wild;Geothlypis trichas;bird;0.045030412;47;N;adults;yes;male;2017;blood;short;large mask size;reproductive effort;correlative;telomere shortening;qPCR
+316;10.1002/ece3.2948;wild;Geothlypis trichas;bird;0.134810788;47;N;adults;yes;male;2017;blood;short;large bib size;reproductive effort;correlative;telomere shortening;qPCR
+317;10.1111/1365-2656.12741;wild;Acrocephalus sechellensis;bird;-0.021521397;1808;Y;adults;yes;both;2018;blood;short;low insect abundance;poor diet;correlative;telomere length;qPCR
+318;10.1111/1365-2656.12741;wild;Acrocephalus sechellensis;bird;-0.036732069;1808;Y;adults;yes;both;2018;blood;short;large tarsus length;development;correlative;telomere length;qPCR
+319;10.1111/1365-2656.12741;wild;Acrocephalus sechellensis;bird;-0.01699107;1808;Y;adults;yes;both;2018;blood;short;low number of helpers;reproductive effort;correlative;telomere length;qPCR
+320;10.1111/1365-2656.12741;wild;Acrocephalus sechellensis;bird;0.002823721;1808;Y;adults;yes;both;2018;blood;short;low territory quality;harsh abiotic condition;correlative;telomere length;qPCR
+321;10.1111/1365-2656.12741;wild;Acrocephalus sechellensis;bird;-0.015373007;1808;Y;adults;yes;both;2018;blood;short;small social group size;reproductive effort;correlative;telomere length;qPCR
+322;10.1111/jeb.13119;wild;Sterna hirundo;bird;0.058065169;200;N;juveniles;yes;both;2017;blood;short;high hatching order;competition;correlative;telomere length;TRF
+323;10.1111/jeb.13119;wild;Sterna hirundo;bird;-0.023004057;96;N;juveniles;yes;both;2017;blood;short;high hatching order;competition;correlative;telomere length;TRF
+324;10.1111/jeb.13119;wild;Sterna hirundo;bird;-0.07413552;200;N;juveniles;yes;both;2017;blood;short;large brood size;competition;correlative;telomere length;TRF
+325;10.1111/jeb.13119;wild;Sterna hirundo;bird;-0.113484684;96;N;juveniles;yes;both;2017;blood;short;large brood size;competition;correlative;telomere length;TRF
+326;10.1111/jeb.13119;wild;Sterna hirundo;bird;-0.014826339;96;Y;juveniles;yes;both;2017;blood;short;large brood size;competition;correlative;telomere shortening;TRF
+329;10.1007/s00442-017-3953-x;wild;Salmo trutta;fish;-0.242652949;51;N;juveniles;yes;both;2017;liver;long;Tetracapsuloides bryosalmonae parasite load;pathogen infection;correlative;telomere length;qPCR
+330;10.1007/s00442-017-3953-x;wild;Salmo trutta;fish;0.298566264;51;N;juveniles;yes;both;2017;liver;long;large size;development;correlative;telomere length;qPCR
+331;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.217211388;52;Y;juveniles;yes;both;2017;blood;short;large tarsus length;development;correlative;telomere length;qPCR
+332;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.282427357;52;Y;juveniles;yes;both;2017;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+333;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;-0.359616761;52;Y;juveniles;yes;both;2017;blood;short;low number of feathers;low parental quality;correlative;telomere length;qPCR
+334;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.094141785;52;Y;juveniles;yes;both;2017;blood;short;absence of plants;low parental quality;correlative;telomere length;qPCR
+335;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0;52;Y;juveniles;yes;both;2017;blood;short;absence of plants;low parental quality;experimental;telomere length;qPCR
+336;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;-0.331722562;52;Y;juveniles;yes;both;2017;blood;short;late hatching date;low parental quality;correlative;telomere length;qPCR
+337;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;-0.38337655;52;Y;juveniles;yes;both;2017;blood;short;Staphylococci prevalence;pathogen infection;correlative;telomere length;qPCR
+338;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.248839706;52;Y;juveniles;yes;both;2017;blood;short;enterobacteria prevalence;pathogen infection;correlative;telomere length;qPCR
+339;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.413501642;52;Y;juveniles;yes;both;2017;blood;short;late hatching date;low parental quality;correlative;telomere shortening;qPCR
+340;10.1016/j.anbehav.2017.01.018;wild;Sturnus unicolor;bird;0.368712313;52;Y;juveniles;yes;both;2017;blood;short;enterobacteria prevalence;pathogen infection;correlative;telomere shortening;qPCR
+341;10.1002/ece3.5386;wild;Tachycineta bicolor;bird;-0.052364418;119;Y;juveniles;yes;both;2019;blood;short;large brood size;competition;experimental;telomere length;TRF
+342;10.1002/ece3.5386;wild;Tachycineta bicolor;bird;0.092318841;119;Y;juveniles;yes;both;2019;blood;short;large size;development;correlative;telomere length;TRF
+343;10.1002/ece3.5386;wild;Tachycineta bicolor;bird;0.015407729;119;Y;juveniles;yes;both;2019;blood;short;low relative mass;competition;correlative;telomere length;TRF
+344;10.16373/j.cnki.ahr.170086;captivity;Nanorana_parkeri_ott899043;amphibian;-0.292728258;31;Y;juveniles;yes;both;2018;heart;long;low water oxygen ;harsh abiotic condition;experimental;telomere length;qPCR
+345;10.16373/j.cnki.ahr.170086;captivity;Nanorana_parkeri_ott899043;amphibian;0.194494341;31;Y;juveniles;yes;both;2018;liver;long;low water oxygen ;harsh abiotic condition;experimental;telomere length;qPCR
+346;10.16373/j.cnki.ahr.170086;captivity;Nanorana_parkeri_ott899043;amphibian;0.260543908;31;Y;juveniles;yes;both;2018;muscle ;long;low water oxygen ;harsh abiotic condition;experimental;telomere length;qPCR
+347;10.1186/s12983-018-0275-8;laboratory;Taenopygia guttata;bird;0.348607104;204;N;juveniles;yes;both;2018;blood;short;high traffic noise;human disturbance;experimental;telomere length;qPCR
+348;10.1186/s12983-018-0275-8;laboratory;Taenopygia guttata;bird;-0.090865624;263;Y;juveniles;yes;both;2018;blood;short;high traffic noise;human disturbance;experimental;telomere shortening;qPCR
+349;10.1186/s12983-018-0275-8;laboratory;Taenopygia guttata;bird;0.019280575;168;N;juveniles;yes;both;2018;blood;short;high traffic noise;human disturbance;experimental;telomere length;qPCR
+350;10.1186/s12983-018-0275-8;laboratory;Taenopygia guttata;bird;-0.113937748;263;Y;juveniles;yes;both;2018;blood;short;high traffic noise;human disturbance;experimental;telomere shortening;qPCR
+351;10.1016/j.ygcen.2019.02.017;wild;Tachycineta bicolor;bird;-0.375737479;35;N;juveniles;yes;both;2019;blood;short;high traffic noise amplitude;human disturbance;experimental;telomere shortening;TRF
+352;10.1098/rsbl.2018.0083;wild;Turdus merula;bird;-0.239494448;104;Y;adults;yes;both;2018;red blood cells;short;high urbanisation;human disturbance;correlative;telomere length;TRF
+353;10.1098/rsbl.2018.0083;wild;Turdus merula;bird;-0.271622375;104;Y;adults;yes;both;2018;red blood cells;short;high urbanisation;human disturbance;correlative;telomere length;TRF

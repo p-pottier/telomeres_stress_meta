@@ -1,0 +1,157 @@
+﻿No;DOI;Oxidative stress measure;Oxidative stress biomarker;Sample size_Telomeres;Effect size_Telomeres;Sample size_Oxidative stress;Effect size_Oxidative stress
+1;10.1098/rsbl.2016.0077;ROS level;oxidative damage;53;-0.3261;53;-0.25
+2;10.1111/1365-2435.12204;ROM level;oxidative damage;84;-1.3193;84;-0.2763
+3;10.1111/1365-2435.12204;oxidative damage (8-OHdG);oxidative damage;84;-1.3193;53;-0.4689
+4;10.1111/1365-2435.12204;antioxidant capacity;antioxidants;84;-1.3193;84;-0.1259
+5;10.1007/s00442-015-3429-9;antioxidant capacity;antioxidants;88;-0.2023;88;-0.1904
+6;10.1007/s00442-015-3429-9;ROM level;oxidative damage;88;-0.2023;88;-0.438
+7;10.1111/j.1365-2435.2010.01825.x;ROM level;oxidative damage;46;0.0504;60;-0.1029
+8;10.1111/j.1365-2435.2010.01825.x;antioxidant capacity;antioxidants;46;0.0504;60;-0.2574
+9;10.3389/fevo.2014.00009;ROM level;oxidative damage;36;-0.5308;36;0.18
+10;10.3389/fevo.2014.00009;antioxidant capacity;antioxidants;36;-0.5308;36;0.1456
+11;10.3389/fevo.2014.00009;oxidative damage (8-OHdG);oxidative damage;36;-0.5308;36;0.1287
+12;10.3389/fevo.2014.00009;ROM level;oxidative damage;36;-0.4895;36;0.18
+13;10.3389/fevo.2014.00009;antioxidant capacity;antioxidants;36;-0.4895;36;0.1456
+14;10.3389/fevo.2014.00009;oxidative damage (8-OHdG);oxidative damage;36;-0.4895;36;0.1287
+15;10.1242/jeb.109942;antioxidant capacity;antioxidants;55;-0.7315;55;0.3785
+16;10.1242/jeb.109942;oxidative damage (8-OHdG);oxidative damage;55;-0.7315;55;-0.347
+17;10.1242/jeb.109942;antioxidant capacity;antioxidants;55;-0.3393;55;0.3785
+18;10.1242/jeb.109942;oxidative damage (8-OHdG);oxidative damage;55;-0.3393;55;-0.347
+19;10.1111/j.1365-294X.2011.05331.x;ROM level;oxidative damage;28;-0.268;28;-0.3931
+20;10.1111/j.1365-294X.2011.05331.x;antioxidant capacity;antioxidants;28;-0.268;28;0.5055
+21;10.1098/rspb.2014.1610;lipid peroxidation;oxidative damage;44;-0.3707;48;0.3108
+22;10.1098/rspb.2014.1610;lipid peroxidation;oxidative damage;44;-0.2177;48;-0.0422
+23;10.1016/j.scitotenv.2016.09.131;GR+GST+GSHratio+GSHtot;antioxidants;21;-0.5959;16;-0.2805
+24;10.1016/j.scitotenv.2016.09.131;GR+GST+GSHratio+GSHtot;antioxidants;21;0.017;16;-0.1676
+25;10.1016/j.scitotenv.2016.09.131;CAT;antioxidants;21;-0.5959;16;-0.53
+26;10.1016/j.scitotenv.2016.09.131;CAT;antioxidants;21;0.017;16;-0.3453
+27;10.1016/j.scitotenv.2016.09.131;GR+GST+GSHratio+GSHtot;antioxidants;21;-0.0792;20;0.4271
+28;10.1016/j.scitotenv.2016.09.131;GR+GST+GSHratio+GSHtot;antioxidants;21;-0.0197;16;0.6403
+29;10.1016/j.scitotenv.2016.09.131;CAT;antioxidants;21;-0.0792;20;0.2976
+30;10.1016/j.scitotenv.2016.09.131;CAT;antioxidants;21;-0.0197;16;-0.1195
+31;10.1016/j.scitotenv.2016.09.131;lipid peroxidation;oxidative damage;21;-0.5959;21;-0.0404
+32;10.1016/j.scitotenv.2016.09.131;lipid peroxidation;oxidative damage;21;0.017;18;-0.2122
+33;10.1016/j.scitotenv.2016.09.131;lipid peroxidation;oxidative damage;21;-0.0792;24;0.1468
+34;10.1016/j.scitotenv.2016.09.131;lipid peroxidation;oxidative damage;21;-0.0197;20;-0.0045
+35;10.1242/dmm.026591;MnSOD;antioxidants;12;1.483;12;-0.7746
+36;10.1242/dmm.026591;CuZnSOD;antioxidants;12;1.483;12;-0.7353
+37;10.1242/dmm.026591;CAT;antioxidants;12;1.483;12;-0.7171
+38;10.1242/dmm.026591;HO-1;antioxidants;12;1.483;12;-0.9852
+39;10.1242/dmm.026591;MnSOD;antioxidants;12;1.483;16;-0.4855
+40;10.1242/dmm.026591;ZnSOD;antioxidants;12;1.483;16;0.0853
+41;10.1242/dmm.026591;ECSOD;antioxidants;12;1.483;16;-0.1085
+42;10.1242/dmm.026591;CAT;antioxidants;12;1.483;16;-0.4184
+43;10.1242/dmm.026591;HO1;antioxidants;12;1.483;16;0.0573
+44;10.1242/dmm.026591;PRDX1;antioxidants;12;1.483;12;0.1988
+45;10.1242/dmm.026591;PRDX3;antioxidants;12;1.483;12;-0.1967
+46;10.1242/dmm.026591;GR;antioxidants;12;1.483;12;-0.4103
+47;10.1096/fj.07-099523;MnSOD;antioxidants;8;0.347;16;-0.552
+48;10.1096/fj.07-099523;CuZnSOD;antioxidants;8;0.347;16;-0.0467
+49;10.1096/fj.07-099523;CAT;antioxidants;8;0.347;16;-0.3776
+50;10.1096/fj.07-099523;GR;antioxidants;8;0.347;16;-0.3045
+51;10.1096/fj.07-099523;GP;antioxidants;8;0.347;16;-0.1891
+52;10.1096/fj.07-099523;MnSOD;antioxidants;8;-0.3157;16;-0.5906
+53;10.1096/fj.07-099523;CuZnSOD;antioxidants;8;-0.3157;16;0
+54;10.1096/fj.07-099523;CAT;antioxidants;8;-0.3157;16;-0.7061
+55;10.1096/fj.07-099523;GR;antioxidants;8;-0.3157;16;0.3189
+56;10.1096/fj.07-099523;GP;antioxidants;8;-0.3157;16;-0.2258
+57;10.1096/fj.07-099523;MnSOD;antioxidants;8;-0.6559;16;-0.3627
+58;10.1096/fj.07-099523;CuZnSOD;antioxidants;8;-0.6559;16;0.0971
+59;10.1096/fj.07-099523;CAT;antioxidants;8;-0.6559;16;-0.4209
+60;10.1096/fj.07-099523;GR;antioxidants;8;-0.6559;16;-0.1481
+61;10.1096/fj.07-099523;GP;antioxidants;8;-0.6559;16;-0.207
+62;10.1096/fj.07-099523;MnSOD;antioxidants;8;0.6049;16;0.3188
+63;10.1096/fj.07-099523;CuZnSOD;antioxidants;8;0.6049;16;-0.2128
+64;10.1096/fj.07-099523;CAT;antioxidants;8;0.6049;16;-0.3624
+65;10.1096/fj.07-099523;GR;antioxidants;8;0.6049;16;0.1642
+66;10.1096/fj.07-099523;GP;antioxidants;8;0.6049;16;0.3014
+67;10.1093/icb/icw044;ROM level+antioxidant capacity;oxidative damage;82;-0.3907;82;0.0812
+68;10.1038/srep40794;oxidative damage (8-OHdG);oxidative damage;32;-0.4009;16;0.114
+69;10.1038/srep40794;oxidative damage (8-OHdG);oxidative damage;32;-0.1843;16;0.0505
+70;10.1038/srep40794;oxidative damage (8-OHdG);oxidative damage;32;-0.3086;16;-0.0891
+71;10.1038/srep40794;oxidative damage (8-OHdG);oxidative damage;32;-0.0033;16;-0.2011
+72;10.1007/s00265-016-2226-8;ROM level;oxidative damage;71;-0.1973;52;-0.0651
+73;10.1007/s00265-016-2226-8;antioxidant capacity;antioxidants;71;-0.1973;65;0.0555
+74;10.7717/peerj.3094;antioxidant capacity;antioxidants;40;0.1887;40;-0.1753
+75;10.7717/peerj.3094;oxidative damage (8-OHdG);oxidative damage;40;0.1887;40;0.0732
+76;10.7717/peerj.3094;GP;antioxidants;40;0.1887;40;0.4978
+77;10.7717/peerj.3094;antioxidant capacity;antioxidants;40;0.1342;40;0.1114
+78;10.7717/peerj.3094;oxidative damage (8-OHdG);oxidative damage;40;0.1342;40;-0.5294
+79;10.7717/peerj.3094;GP;antioxidants;40;0.1342;40;-0.0945
+80;10.1111/mec.14121;total antioxidant status (TAS);antioxidants;65;-0.1356;88;0.0921
+81;10.1111/mec.14121;uric acid;antioxidants;65;-0.1356;60;-1.8591
+82;10.1111/mec.14121;carbonyl protein damages;oxidative damage;65;-0.1356;55;-0.0075
+83;10.1111/mec.14121;total antioxidant status (TAS);antioxidants;65;-0.3413;88;0.0511
+84;10.1111/mec.14121;uric acid;antioxidants;65;-0.3413;60;0.244
+85;10.1111/mec.14121;carbonyl protein damages;oxidative damage;65;-0.3413;55;0.1045
+86;10.1111/mec.14121;total antioxidant status (TAS);antioxidants;65;0.1529;70;-0.0455
+87;10.1111/mec.14121;uric acid;antioxidants;65;0.1529;46;0.1772
+88;10.1111/mec.14121;carbonyl protein damages;oxidative damage;65;0.1529;55;0.0524
+999;10.1016/j.jtherbio.2018.01.004;SOD;antioxidants;20;0.414979049;20;0.026690219
+999;10.1016/j.jtherbio.2018.01.004;SOD;antioxidants;20;-0.790979245;20;0.162898818
+89;10.1111/1365-2656.12927;8-OHdG;oxidative damage;89;0;90;-0.000209923
+90;10.1111/1365-2656.12927;SOD;antioxidants;89;0;85;0.081970167
+91;10.1111/1365-2656.12927;GPx;antioxidants;89;0;90;0.221022391
+92;10.1111/1365-2656.12927;8-OHdG;oxidative damage;90;-0.1145;90;-0.201430002
+97;10.1038/s41598-017-07201-z;GPx;antioxidants;324;0.0361;324;0.173308391
+98;10.1038/s41598-017-07201-z;GSHt;antioxidants;324;0.0361;324;0.079359648
+99;10.1038/s41598-017-07201-z;GR;antioxidants;324;0.0361;324;0.144223817
+100;10.1038/s41598-017-07201-z;CAT;antioxidants;324;0.0361;324;0.030539784
+100;10.1038/s41598-017-07201-z;SOD;antioxidants;324;0.0361;324;0.084199205
+101;10.1038/s41598-017-07201-z;MDA;oxidative damage;324;0.0361;324;0.016102921
+102;10.1038/s41598-017-07201-z;GSH/GSSG;antioxidants;324;0.0361;324;-0.104296612
+103;10.1038/s41598-017-07201-z;GPx;antioxidants;324;-0.0525;324;0.03773845
+104;10.1038/s41598-017-07201-z;GSHt;antioxidants;324;-0.0525;324;0.117975665
+105;10.1038/s41598-017-07201-z;GR;antioxidants;324;-0.0525;324;-0.154680008
+106;10.1038/s41598-017-07201-z;CAT;antioxidants;324;-0.0525;324;-0.072712437
+106;10.1038/s41598-017-07201-z;SOD;antioxidants;324;-0.0525;324;-0.052909193
+107;10.1038/s41598-017-07201-z;MDA;oxidative damage;324;-0.0525;324;-0.104371646
+108;10.1038/s41598-017-07201-z;GSH/GSSG;antioxidants;324;-0.0525;324;-0.08198391
+109;10.1038/s41598-017-07201-z;GSH/GSSG;antioxidants;324;-0.271;324;-0.467145308
+110;10.1111/jeb.13396;MDA;oxidative damage;264;-0.0062;264;0.204001268
+111;10.1111/jeb.13396;GSHt;antioxidants;264;-0.0062;264;-0.128151771
+112;10.1111/jeb.13396;TAS;antioxidants;264;-0.0062;264;-0.024709568
+113;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.717;11;-0.380734624
+114;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.655;11;0.298566264
+115;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.471;11;-0.080171325
+116;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.8456;11;-0.435611223
+117;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.6401;11;-0.604155603
+118;10.1016/j.envpol.2019.01.025;TAC;antioxidants;11;-0.4036;11;-0.020002667
+119;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.717;11;-0.3211193
+120;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.655;11;0.435611223
+121;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.471;11;-0.060072156
+122;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.8456;11;-0.549306144
+123;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.6401;11;-0.447692024
+124;10.1016/j.envpol.2019.01.025;ROMs;oxidative damage;11;-0.4036;11;-0.234189467
+125;10.1242/jeb.196030;TAC;antioxidants;102;0;17;0.160083032
+126;10.1242/jeb.196030;TAC;antioxidants;66;0.1096;51;0.074401719
+127;10.1242/jeb.196030;ROMSs;oxidative damage;102;0;17;-0.341062066
+128;10.1242/jeb.196030;ROMSs;oxidative damage;66;0.1096;51;0.19904403
+129;10.1186/s12862-017-1004-1;MDA;oxidative damage;102.93;0.0047;182;0.020422617
+130;10.1186/s12862-017-1004-1;GSHt;antioxidants;102.93;0.0047;173;0
+131;10.1186/s12862-017-1004-1;GSH/GSSG;antioxidants;102.93;0.0047;81;0.249255617
+132;10.1186/s12862-017-1004-1;CAT;antioxidants;102.93;0.0047;200;-0.129020598
+133;10.1186/s12862-017-1004-1;GPx;antioxidants;102.93;0.0047;187;0.099047348
+134;10.1186/s12862-017-1004-1;GR;antioxidants;102.93;0.0047;200;-0.091040299
+135;10.1002/ece3.2948;DNA damage;oxidative damage;109;-0.2017;109;-0.497311288
+136;10.1002/ece3.2948;DNA damage;oxidative damage;47;-0.2069;47;0.365443754
+137;10.1002/ece3.2948;TAC;antioxidants;47;-0.2069;47;-0.161386696
+138;10.1002/ece3.2948;TAC;antioxidants;47;-0.143;47;0.40005965
+139;10.1002/ece3.2948;TAC;antioxidants;47;0.045;47;0.484700279
+140;10.1002/ece3.2948;TAC;antioxidants;47;0.1348;47;-0.030009005
+141;10.1007/s00442-017-3953-x;GST;antioxidants;51;-0.2427;51;-0.323548127
+142;10.1007/s00442-017-3953-x;GST;antioxidants;51;0.2986;51;-0.244935895
+143;10.1007/s00442-017-3953-x;SOD;antioxidants;51;-0.2427;51;-0.074433393
+144;10.1007/s00442-017-3953-x;SOD;antioxidants;51;0.2986;51;0.072330178
+145;10.1007/s00442-017-3953-x;CAT;antioxidants;51;-0.2427;44;0.023030229
+146;10.1007/s00442-017-3953-x;CAT;antioxidants;51;0.2986;44;-0.042936406
+147;10.1007/s00442-017-3953-x;GSH/GSSG;antioxidants;51;-0.2427;47;0.101833622
+148;10.1007/s00442-017-3953-x;GSH/GSSG;antioxidants;51;0.2986;47;0.066023823
+149;10.1007/s00442-017-3953-x;GSHt;antioxidants;51;-0.2427;49;-0.404536685
+150;10.1007/s00442-017-3953-x;GSHt;antioxidants;51;0.2986;49;-0.345454166
+151;10.1007/s00442-017-3953-x;GP;antioxidants;51;-0.2427;49;0.242731542
+152;10.1007/s00442-017-3953-x;GP;antioxidants;51;0.2986;49;-0.337351524
+153;10.1007/s00442-017-3953-x;GR;antioxidants;51;-0.2427;50;0.452318001
+154;10.1007/s00442-017-3953-x;GR;antioxidants;51;0.2986;50;-0.616454203
+155;10.1007/s00442-017-3953-x;G6PDH;antioxidants;51;-0.2427;46;0.152799219
+156;10.1007/s00442-017-3953-x;G6PDH;antioxidants;51;0.2986;46;-0.230643393
