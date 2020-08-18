@@ -6,16 +6,16 @@
 # load necessary packages ----
 
 library(ape)
-library(asreml)
-library(MCMCglmm)
+# library(asreml)
+# library(MCMCglmm)
 library(metafor)
 library(MuMIn)
 eval(metafor:::.MuMIn)
-
+# commented-out packages left here for compatibility with earlier version and in case they're needed
 
 ####
 # load data ----
-data <- read.table("190801_FINAL_DATA_cleaned_SZD.csv", sep=";", head=T)
+data <- read.table("./data/data_stressor exposure_telomeres.csv", sep=";", head=T)
 
 # fix specific levels in data
 # for species where no phylogenetic information is available
@@ -28,9 +28,9 @@ levels(data$species)[c(65,66)] <- "Taeniopygia guttata"
 # add underscore to all names
 levels(data$species) <- gsub(" ", "_", levels(data$species), fixed=T)
 
-# relevel factors with incorrect factor names
+# relevel factors with non-optimal (e.g. containing spaces) factor names or redundant levels
 levels(data$measure) <- c("tel_len", "tel_short")
-levels(data$Corr) <- c("N", "N", "Y", "N")
+levels(data$corr) <- c("N", "N", "Y")
 
 # calculate sampling variances and weights
 data$mvar <- 1/(data$n_tot-3)
@@ -41,18 +41,15 @@ data$weights <- 1/data$mvar
 # as overall between-study variance 
 data$weights_tau <- data$n_tot-3+(1/0.1098)
 
-# remove invalid data
+# remove invalid data if any
 data.analysis <- data[!is.na(data$weights),]
 
-# simplify levels of some factors
-levels(data.analysis$tissue_lifespan) <- c("L","L","S")
+# simplify the age variable to single-out studies with juveniles
 data.analysis$age2 <- data.analysis$age
 levels(data.analysis$age2) <- c("AD","AD","JUV")
 
-# clean varaibles names, produce duplicate speciec column
+# produce duplicate species column
 data.analysis$species2 <- data.analysis$species
-
-names(data.analysis)[1] <- "ES.id"
 
 
 
@@ -61,7 +58,7 @@ names(data.analysis)[1] <- "ES.id"
 # the trees where combined root to root from individual trees manually directly in Newick files
 # all branch length set to unity due to nonuniform units in original phylogenies
 
-all_taxa<- read.tree("_mamm_bir_rep_amph_fish.txt")
+all_taxa <- read.tree("_mamm_bir_rep_amph_fish.txt")
 plot(all_taxa, root.edge = T)
 
 all_taxa$edge.length <- NULL
@@ -72,10 +69,12 @@ all_taxa <- compute.brlen(all_taxa, method="Grafen")
 ####
 # pre-process data ----
 
+# CURRENTLY REDUNDANT
 # compute the inverse of phylogenetic correlation matrix
 IA <- inverseA(all_taxa, nodes = "TIPS")
 IA.asreml <- sm2asreml(IA$Ainv, IA$node.names)
 
+# CURRENTLY REDUNDANT
 # calculate sigma_m
 sigma_m <- sum(data.analysis$weights*nrow(data.analysis))/(sum(data.analysis$weights)^2-sum(data.analysis$weights^2))
 
@@ -90,28 +89,28 @@ vcv.phylo(all_taxa, cor = T) -> taxa_cor
 
 # full and intercept models without phylogenetic effect (1a and 2a)
 model1a <- rma.mv(yi = Final_Z,
-                mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                  measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES.id))
-model2a <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES.id))
+                mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                  measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES_id))
+model2a <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES_id))
 summary(model1a)
 summary(model2a)
 
 # full and intercept models with both species and phylogenetic effects (1t and 2t)
 model1t <- rma.mv(yi = Final_Z,
-                  mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                    measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|species2, ~1|DOI, ~1|ES.id), R = list(species = taxa_cor))
-model2t <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|species2, ~1|DOI, ~1|ES.id), R = list(species = taxa_cor))
+                  mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                    measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|species2, ~1|DOI, ~1|ES_id), R = list(species = taxa_cor))
+model2t <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|species2, ~1|DOI, ~1|ES_id), R = list(species = taxa_cor))
 summary(model1t)
 summary(model2t)
 
 # phylogenetic full and intercept models (species only linked to phylogeny, no non-phylogenetic species effect) (1p and 2p)
 model1p <- rma.mv(yi = Final_Z,
-                  mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                    measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES.id), R = list(species = taxa_cor))
-model2p <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES.id), R = list(species = taxa_cor))
+                  mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                    measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES_id), R = list(species = taxa_cor))
+model2p <- rma.mv(yi = Final_Z, V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI, ~1|ES_id), R = list(species = taxa_cor))
 summary(model1p)
 summary(model2p)
 
@@ -128,16 +127,16 @@ as.numeric(1 - pchisq(2*(logLik(model1p) - logLik(model1a)), 1))
 
 # test the species term alone
 model1a.sp <- rma.mv(yi = Final_Z,
-                  mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                    measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                  V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES.id))
+                  mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                    measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                  V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES_id))
 as.numeric(1 - pchisq(2*(logLik(model1a) - logLik(model1a.sp)), 1))
 
 # test the DOI term alone
 model1a.doi <- rma.mv(yi = Final_Z,
-                     mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                       measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id))
+                     mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                       measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
 as.numeric(1 - pchisq(2*(logLik(model1a) - logLik(model1a.doi)), 1))
 
 
@@ -152,12 +151,12 @@ as.numeric(1 - pchisq(2*(logLik(model2p) - logLik(model2a)), 1))
 
 # test the species term
 model2a.sp <- rma.mv(yi = Final_Z,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES.id))
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES_id))
 as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.sp)), 1))
 
 # test the DOI term
 model2a.doi <- rma.mv(yi = Final_Z,
-                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id))
+                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
 as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.doi)), 1))
 
 
@@ -166,9 +165,9 @@ as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.doi)), 1))
 # model selection of full model, method = ML ----
 
 model1a.ML <- rma.mv(yi = Final_Z,
-                  mods = ~age2+sex+phylum+wild.vs..captivity+tissue_lifespan+FINAL.stress_category+exp_vs._cor + measure+method_T+Corr+accounting_for_age +
-                    measure:age2 + measure:FINAL.stress_category + tissue_lifespan:FINAL.stress_category + age2:FINAL.stress_category,
-                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                  mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
+                    measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
+                  V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 # model2a.ML <- rma.mv(yi = Final_Z,
 #                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI), method = "ML")
 
@@ -189,53 +188,53 @@ model1a.ML.selection
 
 # fit individual models best models from deltaAIC <= 2 set
 model1a.1 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.2 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.3 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+method_T,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+method_T,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.4 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+method_T+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+method_T+accounting_for_age,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.5 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+tissue_lifespan+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+tissue_lifespan+accounting_for_age,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.6 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+tissue_lifespan,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+tissue_lifespan,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.7 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+accounting_for_age+age2,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age+age2,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.8 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+accounting_for_age+tissue_lifespan+method_T,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age+tissue_lifespan+method_T,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.9 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+wild.vs..captivity,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+wild_captive,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.10 <- rma.mv(yi = Final_Z,
-                    mods = ~Corr+FINAL.stress_category+wild.vs..captivity+exp_vs._cor,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                    mods = ~corr+stressor_cat+wild_captive+exper_correl,
+                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.11 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+wild.vs..captivity+exp_vs._cor,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+wild_captive+exper_correl,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.12 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+measure+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+measure+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.13 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+age2+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+age2+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.14 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+method_T+tissue_lifespan+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+method_T+tissue_lifespan+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.15 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+accounting_for_age+exp_vs._cor+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+accounting_for_age+exper_correl+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 model1a.16 <- rma.mv(yi = Final_Z,
-                     mods = ~Corr+FINAL.stress_category+accounting_for_age+age2+tissue_lifespan+wild.vs..captivity,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id), method = "ML")
+                     mods = ~corr+stressor_cat+accounting_for_age+age2+tissue_lifespan+wild_captive,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
 
 model.selection.best <- model.sel(list(model1a.1, model1a.2, model1a.3, model1a.4, model1a.5, model1a.6, model1a.7, model1a.8, model1a.9, model1a.10,
                                        model1a.11, model1a.12, model1a.13, model1a.14, model1a.15, model1a.16), fit = NA)
@@ -254,8 +253,8 @@ importance(model1a.avg)
 # single-out again the best model optimal model ----
 
 model1a.best1 <- rma.mv(yi = Final_Z,
-                        mods = ~ Corr+FINAL.stress_category+wild.vs..captivity,
-                        V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id))
+                        mods = ~ corr+stressor_cat+wild_captive,
+                        V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
 summary(model1a.best1)
 
 # publication bias and related analyses ----
@@ -284,7 +283,7 @@ summary(model1a.best.yr)
 # as a supplement - see how effect sizes partition between animal phyla
 model1a.best1.ph <- rma.mv(yi = Final_Z,
                         mods = ~ phylum-1,
-                        V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES.id))
+                        V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
 summary(model1a.best1.ph)
 
 

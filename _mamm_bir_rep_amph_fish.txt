@@ -1,0 +1,9 @@
+(((Acipenser_fulvescens:0.1694224042,((Danio_rerio:0.1100705946,Cyprinus_carpio:0.1100705946):0.5203007441,(((Salmo_salar:0.02294526994,Salmo_trutta:0.02294526994):0.02,Oncorhynchus_nerka_mykiss:0.03626537977)100:0.2579669746,(Menidia_menidia:0.2740782427,(Pungitius_pungitius:0.04495485821,Gasterosteus_aculeatus:0.04412082057)47:0.207318578)100:0.3078769399)100:0.114919583)100:0.4249356374)100,
+
+((Rana_temporaria_temporaria_ott979590,Nanorana_parkeri_ott899043),Pelobates_cultripes_ott703772)),
+
+(((((((Mus_musculus:30.3,Rattus_norvegicus:30.3):19.6,Phodopus_sungorus:49.9,Clethrionomys_glareolus:49.9):35.2,Ctenomys_torquatus:85.1):0.2,Myoxus_glis:85.3):9.2,Macaca_mulatta:94.5):4.4,((Ovis_aries:30,Capreolus_capreolus:30):58.5,(Ursus_americanus:67.1,(Crocuta_crocuta:42.5,Suricata_suricatta:42.5):24.6):21.4):10.4),
+
+((Dermochelys_coriacea:1,(Lacerta_agilis:1,((Ctenophorus_pictus:1,Agama_agama:1)100:1,Thamnophis_sirtalis:1)96:1)100:1),
+
+(((((Sterna_hirundo:1,((Larus_crassirostris:1,Larus_fuscus:1):1,Rissa_tridactyla:1):1):1,Cepphus_grylle:1):1,((Psittacus_erithacus:1,(Aphrastura_spinicauda:1,((Corvus_monedula:1,Pica_pica:1):1,((((Parus_ater:1,Parus_major:1):1,Parus_caeruleus:1):1,((Tachycineta_bicolor:1,Hirundo_rustica:1):1,(Acrocephalus_sechellensis:1,Acrocephalus_arundinaceus:1):1):1):1,(((Sturnus_unicolor:1,Sturnus_vulgaris:1):1,(Turdus_merula:1,((Ficedula_hypoleuca:1,Ficedula_albicollis:1):1,Saxicola_torquatus:1):1):1):1,(((Carduelis_spinus:1,((Junco_hyemalis:1,Zonotrichia_albicollis:1):1,(Geothlypis_trichas:1,Setophaga_ruticilla:1):1):1):1,Passer_domesticus:1):1,(Erythrura_gouldiae:1,Taeniopygia_guttata:1):1):1):1):1):1):1):1,(Strix_aluco:1,(Vultur_gryphus:1,Haliaeetus_albicilla:1):1):1):1):1,((((Thalassarche_melanophrys:1,Hydrobates_pelagicus:1):1,(Pygoscelis_adeliae:1,(Aptenodytes_patagonicus:1,Spheniscus_magellanicus:1):1):1):1,(Fregata_magnificens:1,Phalacrocorax_aristotelis:1):1):1,Clamator_glandarius:1):1):1,Tachymarptis_melba:1))));
