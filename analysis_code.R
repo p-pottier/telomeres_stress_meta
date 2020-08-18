@@ -2,8 +2,10 @@
 ## telomeres-stress meta-analysis - code for Chatelain et al. 2020
 ## Szymek Drobniak (szymek.drobniak_at_gmail.com)
 
-####
+
 # load necessary packages ----
+####
+
 
 library(ape)
 # library(asreml)
@@ -13,9 +15,12 @@ library(MuMIn)
 eval(metafor:::.MuMIn)
 # commented-out packages left here for compatibility with earlier version and in case they're needed
 
-####
+
 # load data ----
+####
+
 data <- read.table("./data/data_stressor exposure_telomeres.csv", sep=";", head=T)
+data <- read.table("./data/190801_FINAL_DATA_cleaned_SZD.csv", sep=";", head=T)
 
 # fix specific levels in data
 # for species where no phylogenetic information is available
@@ -53,21 +58,24 @@ data.analysis$species2 <- data.analysis$species
 
 
 
-####
+
 # load phylogeny ----
+####
+
 # the trees where combined root to root from individual trees manually directly in Newick files
 # all branch length set to unity due to nonuniform units in original phylogenies
 
 all_taxa <- read.tree("_mamm_bir_rep_amph_fish.txt")
-plot(all_taxa, root.edge = T)
+plot(all_taxa, root.edge = T, cex = 0.6)
 
 all_taxa$edge.length <- NULL
 all_taxa$node.label <- NULL
 all_taxa <- compute.brlen(all_taxa, method="Grafen")
 
 
-####
+
 # pre-process data ----
+####
 
 # CURRENTLY REDUNDANT
 # compute the inverse of phylogenetic correlation matrix
@@ -80,8 +88,9 @@ sigma_m <- sum(data.analysis$weights*nrow(data.analysis))/(sum(data.analysis$wei
 
 
 
-####
+
 # generate full and intercept models ----
+####
 
 # generate phylogenetic VCV matrix
 vcv.phylo(all_taxa, cor = T) -> taxa_cor
@@ -116,8 +125,34 @@ summary(model2p)
 
 
 
+
+# random terms tests - intercept model ----
 ####
+
+# these are the radnom tests mentioned in the paper
+
+# phylogeny vs taxonomic
+as.numeric(1 - pchisq(2*(logLik(model2t) - logLik(model2p)), 1))
+
+# phylogeny vs regular
+as.numeric(1 - pchisq(2*(logLik(model2p) - logLik(model2a)), 1))
+
+# test the species term
+model2a.sp <- rma.mv(yi = Final_Z,
+                     V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES_id))
+as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.sp)), 1))
+
+# test the DOI term
+model2a.doi <- rma.mv(yi = Final_Z,
+                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
+as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.doi)), 1))
+
+
+
 # random terms tests - full models ----
+####
+
+# performed to complement the previous batch and check the results hold
 
 # # phylogeny vs taxonomic
 as.numeric(1 - pchisq(2*(logLik(model1t) - logLik(model1p)), 1))
@@ -140,26 +175,6 @@ model1a.doi <- rma.mv(yi = Final_Z,
 as.numeric(1 - pchisq(2*(logLik(model1a) - logLik(model1a.doi)), 1))
 
 
-####
-# random terms tests - intercept model ----
-
-# phylogeny vs taxonomic
-as.numeric(1 - pchisq(2*(logLik(model2t) - logLik(model2p)), 1))
-
-# phylogeny vs regular
-as.numeric(1 - pchisq(2*(logLik(model2p) - logLik(model2a)), 1))
-
-# test the species term
-model2a.sp <- rma.mv(yi = Final_Z,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|DOI, ~1|ES_id))
-as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.sp)), 1))
-
-# test the DOI term
-model2a.doi <- rma.mv(yi = Final_Z,
-                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
-as.numeric(1 - pchisq(2*(logLik(model2a) - logLik(model2a.doi)), 1))
-
-
 
 ####
 # model selection of full model, method = ML ----
@@ -168,101 +183,44 @@ model1a.ML <- rma.mv(yi = Final_Z,
                   mods = ~age2+sex+phylum+wild_captive+tissue_lifespan+stressor_cat+exper_correl + measure+method_T+corr+accounting_for_age +
                     measure:age2 + measure:stressor_cat + tissue_lifespan:stressor_cat + age2:stressor_cat,
                   V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-# model2a.ML <- rma.mv(yi = Final_Z,
-#                      V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|DOI), method = "ML")
 
 
-# !!! NOTE - takes v. long time to run !!!
-model1a.ML.selection <- dredge(model1a.ML, trace = T)
 
-# save the resulting selection table to save on time if you want to return to results later
-save(model1a.ML.selection, file = "190807_model1a.ML.selection.Rdata")
+
+# # !!! NOTE - takes v. long time to run !!!
+# # the below lines are commented-out to avoid accidentally running the model selection
+# # which takes a long time to run
+# # to explore the results please load the final_selection.Rdata saved object by running:
+# load("190807_final_selection.Rdata")
+
+# # proper model selection code starts below
+# model1a.ML.selection <- dredge(model1a.ML, trace = T)
+# 
+# # save the resulting selection table to save on time if you want to return to results later
+# save(model1a.ML.selection, file = "DATEYOURFILEHERE_model1a.ML.selection.Rdata")
 
 # lookup the selection table - data in Table 2
 model1a.ML.selection
 
 
+# model average estimates ----
+####
 
-
-# model average estimates [not functional at the moment] ----
-
-# fit individual models best models from deltaAIC <= 2 set
-model1a.1 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.2 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.3 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+method_T,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.4 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+method_T+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.5 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+tissue_lifespan+accounting_for_age,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.6 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+tissue_lifespan,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.7 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age+age2,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.8 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+accounting_for_age+tissue_lifespan+method_T,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.9 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+wild_captive,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.10 <- rma.mv(yi = Final_Z,
-                    mods = ~corr+stressor_cat+wild_captive+exper_correl,
-                    V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.11 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+wild_captive+exper_correl,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.12 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+measure+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.13 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+age2+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.14 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+method_T+tissue_lifespan+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.15 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+accounting_for_age+exper_correl+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-model1a.16 <- rma.mv(yi = Final_Z,
-                     mods = ~corr+stressor_cat+accounting_for_age+age2+tissue_lifespan+wild_captive,
-                     V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id), method = "ML")
-
-model.selection.best <- model.sel(list(model1a.1, model1a.2, model1a.3, model1a.4, model1a.5, model1a.6, model1a.7, model1a.8, model1a.9, model1a.10,
-                                       model1a.11, model1a.12, model1a.13, model1a.14, model1a.15, model1a.16), fit = NA)
+# (prior to moving here please load the .Rdata object referenced above)
 
 model1a.avg <- model.avg(model1a.ML.selection, subset = delta <= 2)
+summary(model1a.avg)
+importance(model1a.avg)
 
 # the below produces data in Table 3
 summary(model1a.avg)
 importance(model1a.avg)
 
 
-
-
-
-
-# single-out again the best model optimal model ----
-
-model1a.best1 <- rma.mv(yi = Final_Z,
-                        mods = ~ corr+stressor_cat+wild_captive,
-                        V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
-summary(model1a.best1)
-
 # publication bias and related analyses ----
+####
 
-# generate funnel-plot object based on the best model
-funnel(model1a.best1) -> object
-
-# simplify model (metafor cannot handle hierarchical models in funnel-plot analysis)
+# run simple version of the best model - metafor cannot handle here hierarchical models
 model1a.best1.uni <- rma(yi = Final_Z,
                         vi = mvar, data = data.analysis, test = "t")
 funnel(model1a.best1.uni)
@@ -275,36 +233,30 @@ trimfill(model1a.best1.uni, estimator = "R0")
 trimfill(model1a.best1.uni, estimator = "Q0")
 
 # check for year trend
-model1a.best.yr <- rma.mv(yi = Final_Z,
+model1a.yr <- rma.mv(yi = Final_Z,
                         mods = ~ year_publication,
-                        V = mvar, data = data, test = "t", random = list(~1|species, ~1|X...No))
-summary(model1a.best.yr)
+                        V = mvar, data = data, test = "t", random = list(~1|species, ~1|ES_id))
+summary(model1a.yr)
 
 # as a supplement - see how effect sizes partition between animal phyla
-model1a.best1.ph <- rma.mv(yi = Final_Z,
+model1a.ph <- rma.mv(yi = Final_Z,
                         mods = ~ phylum-1,
                         V = mvar, data = data.analysis, test = "t", random = list(~1|species, ~1|ES_id))
-summary(model1a.best1.ph)
+summary(model1a.ph)
 
 
 
-
-
-
-
-
-
-# oxidative stress ----
+# oxidative stress vs telomeres analysis ----
+####
 
 # load data and create sampling variances for both effect size sets
-ox_table <- read.csv("stress_tel_SZD190807.csv", sep = ";", head = T)
+ox_table <- read.csv("./data/data_stressor exposure_telomeres_oxidative stress.csv", sep = ";", head = T)
 ox_table$mev_o <- 1/(ox_table$n_OS-3)
 ox_table$mev_t <- 1/(ox_table$n_T-3)
 
 summary(ox_table)
 
-# rename variable indexing individual rows
-names(ox_table)[1] <- "ES_id"
+# factorise variable indexing individual rows
 ox_table$ES_id <- as.factor(ox_table$ES_id)
 
 # fit overall model to look at general patterns of dependence (note - only approximately valid)
@@ -342,6 +294,7 @@ for(i in 1:nrow(ox_table)) {
 
 
 # randomisation procedure for OX - TEL analysis (ALL data) ----
+####
 
 # form empty columns to store sampled data
 ox_table$sampled_O <- numeric(nrow(ox_table))
@@ -352,6 +305,7 @@ N <- 5000
 # create object to store simulated outcomes
 out <- numeric(N)
 
+## !!!NOTE - takes some time to run
 for (j in 1:N) {
   # in each of N simulations ...
   for(i in 1:nrow(ox_table)) {
@@ -387,9 +341,10 @@ mean(out) # average r_sampled
 
 
 
-# randoisation procedure for OX - TEL analysis only for antioxidants levels  ----
+# randomisation procedure for OX - TEL analysis only for antioxidants levels  ----
+####
 
-# the logic is the same as described above)
+# (the logic is the same as described above)
 
 ox_table <- read.csv("stress_tel_SZD190807.csv", sep = ";", head = T)
 ox_table$mev_o <- 1/(ox_table$n_OS-3)
@@ -443,7 +398,7 @@ mean(out)
 
 
 
-# randoisation procedure for OX - TEL analysis only for level of oxidative damages  ----
+# randomisation procedure for OX - TEL analysis only for level of oxidative damages  ----
 # the logic is the same as in the first example
 ox_table <- read.csv("stress_tel_SZD190807.csv", sep = ";", head = T)
 ox_table$mev_o <- 1/(ox_table$n_OS-3)
@@ -453,7 +408,7 @@ summary(ox_table)
 names(ox_table)[1] <- "ES_id"
 ox_table$ES_id <- as.factor(ox_table$ES_id)
 
-ox_table <- subset(ox_table, OS_category_pooled == "oxidative damages")
+ox_table <- subset(ox_table, OS_category_pooled == "oxidative damage")
 ox_table$sampled_O <- numeric(nrow(ox_table))
 ox_table$sampled_T <- numeric(nrow(ox_table))
 N <- 5000
@@ -475,6 +430,7 @@ for(i in 1:nrow(ox_table)) {
   segments(cen.point.x, cen.point.y, cen.point.x, cen.point.y + ox_table[i, "mev_t"])
 }
 
+## !!!NOTE - takes some time to run
 for (j in 1:N) {
   for(i in 1:nrow(ox_table)) {
     sample.O <- rnorm(n = 1, mean = ox_table[i, "Z_OS"], sd = sqrt(ox_table[i, "mev_o"]))
