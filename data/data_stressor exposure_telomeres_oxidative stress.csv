@@ -1,4 +1,4 @@
-﻿No;DOI;Oxidative stress measure;Oxidative stress biomarker;Sample size_Telomeres;Effect size_Telomeres;Sample size_Oxidative stress;Effect size_Oxidative stress
+﻿ES_id;DOI;OS_measure;OS_category_pooled;n_T;Z_T;n_OS;Z_OS
 1;10.1098/rsbl.2016.0077;ROS level;oxidative damage;53;-0.3261;53;-0.25
 2;10.1111/1365-2435.12204;ROM level;oxidative damage;84;-1.3193;84;-0.2763
 3;10.1111/1365-2435.12204;oxidative damage (8-OHdG);oxidative damage;84;-1.3193;53;-0.4689

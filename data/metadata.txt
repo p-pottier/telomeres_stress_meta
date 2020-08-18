@@ -1,0 +1,30 @@
+# telomere & oxidative stress data
+ES_id			effect size ID
+DOI			publication DOI identifier
+OS_measure		type of measurement
+OS_biomarker		two categories of OS measure used in analyses
+n_T			sample size - telomere ES
+n_OS			sample size - oxidative stress
+Z_T			telomere effect size (Fisher's Z)
+OS_T			oxidative stress effect size (Fisher's Z)
+
+# telomere data (large database)
+ES_id			effect size ID
+DOI			DOI
+wild_captive		type of study population (wild, captive, laboratory)
+species			species
+phylum			taxonomical class
+Final_Z			effect size (Fisher's Z)
+n_tot			ES sample size
+corr			effect size corrected for other predictors (Y/N)
+age			age of individuals
+accounting_for_age	did analysis account for age?
+sex			sexes of individuals
+year_publication	year
+tissue			type of tissue/organ used
+tissue_lifespan		turnover rate of tissues
+stressor		detailed type of stressor
+stressor_cat		broader types of stressors (used in models)
+exper_correl		correlative or experimental study?
+measure			type of telomere attrition measure
+method_T		type of telomere measurement protocol			
